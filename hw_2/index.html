@@ -44,81 +44,101 @@
     
 <h1>Homework #2</h1>
 <section class="table">
-<h2>Table</h2>
-<table>
-    <caption style="text-align:left; margin-bottom:5px;">Table with fake data</caption>
-    <tr>
-        <th>Ім'я</th>
-        <th>Прізвище</th>
-        <th>Телефон</th>
-        <th>Email</th>
-    </tr>
-    <tr>
-        <td>Любов</td>
-        <td>Кравченко</td>
-        <td>(437) 394-5914</td>
-        <td>pdiihd@kaconri.cf</td>
-    </tr>
-    <tr>
-        <td>Марина </td>
-        <td>Микитюк</td>
-        <td>(261) 789-3612</td>
-        <td> lnabil.di@reaneta.ga</td>
-    </tr>
-    <tr>
-        <td> Юрій</td>
-        <td>Сергієнко</td>
-        <td>(986) 906-9382</td>
-        <td>zali.ab@ypplasev.gq </td>
-    </tr>
-    <tr>
-        <td>B'ячеслав</td>
-        <td>Таращук</td>
-        <td>(351) 243-0021</td>
-        <td>kdavid@leoplethbi.ml</td>
-    </tr>
-  
-</table>
+    <h2>Table</h2>
+    <table>
+        <caption style="text-align:left; margin-bottom:5px;">Table with fake data</caption>
+        <tr>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+            <th>Телефон</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Любов</td>
+            <td>Кравченко</td>
+            <td>(437) 394-5914</td>
+            <td>pdiihd@kaconri.cf</td>
+        </tr>
+        <tr>
+            <td>Марина </td>
+            <td>Микитюк</td>
+            <td>(261) 789-3612</td>
+            <td> lnabil.di@reaneta.ga</td>
+        </tr>
+        <tr>
+            <td> Юрій</td>
+            <td>Сергієнко</td>
+            <td>(986) 906-9382</td>
+            <td>zali.ab@ypplasev.gq </td>
+        </tr>
+        <tr>
+            <td>B'ячеслав</td>
+            <td>Таращук</td>
+            <td>(351) 243-0021</td>
+            <td>kdavid@leoplethbi.ml</td>
+        </tr>
+    
+    </table>
 </section>
 
 <section id="form">
-<h2>Form</h2>
+    <h2>Form</h2>
 
-<fieldset>
-    <legend><b>Form description here</b></legend>
-<form>
-<p><input type="text" id="first_name" name="first_name" placeholder="Введіть ваше ім'я"></p>
-<p><input type="text" id="second_name" name="second_name" placeholder="Введіть ваше прізвище"></p>
-<p>Вкажіть вашу стать:</p>
-<p><input type="radio" id="female" name="gender" value="female" checked>
-<label for="female">Жіноча</label></p>
-<p><input type="radio" id="male" name="gender" value="male">
-<label for="male">Чоловіча</label></p>
-<textarea id="comment" name="comment" rows="10" cols="30" placeholder="Напишіть свій коментарій...">
-</textarea>    
+    <fieldset>
+        <legend><b>Form description here</b></legend>
+        <form>
+            <p><input type="text" id="first_name" name="first_name" placeholder="Введіть ваше ім'я"></p>
+            <p><input type="text" id="second_name" name="second_name" placeholder="Введіть ваше прізвище"></p>
+            <p>Вкажіть вашу стать:</p>
+            <p>
+                <label>
+                    <input type="radio" id="female" name="gender" value="female" checked>
+                    Жіноча
+                </label>
+            </p>
+            <p>
+                <label>    
+                    <input type="radio" id="male" name="gender" value="male">
+                    Чоловіча
+                </label>
+            </p>
+            <textarea id="comment" name="comment" rows="10" cols="30" placeholder="Напишіть свій коментарій...">
+            </textarea>    
 
-<div>
-    <select id="city" name="city"> 
-        <option value="placeholder" selected disabled>Виберіть місто:</option>
-        <option value="Kyiv">Київ</option>
-        <option value="Charkiv">Харків</option>
-        <option value="Odesa">Одеса</option>
-        <option value="Dnipro">Дніпро</option>
-        <option value="Lviv">Львів</option>
-    </select>
-</div>
+            <div>
+                <select id="city" name="city"> 
+                    <option value="placeholder" selected disabled>Виберіть місто:</option>
+                    <option value="Kyiv">Київ</option>
+                    <option value="Charkiv">Харків</option>
+                    <option value="Odesa">Одеса</option>
+                    <option value="Dnipro">Дніпро</option>
+                    <option value="Lviv">Львів</option>
+                </select>
+            </div>
 
-<p>Виберіть мову:</p>
-<p><input type="checkbox" id="uk" name="uk">
-<label for="uk">Українська</label></p>
-<p><input type="checkbox" id="ru" name="ru">
-<label for="ru">Російська</label></p>
-<p><input type="checkbox" id="en" name="en">
-<label for="en">Англійська</label></p>
-<input type="submit" value="Відправити">
+            <p>Виберіть мову:</p>
+            <p>
+                <label>
+                    <input type="checkbox" id="uk" name="uk">
+                    Українська
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" id="ru" name="ru">
+                    Російська
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" id="en" name="en">
+                    Англійська
+                </label>
+            </p>
+            <input type="submit" value="Відправити">
 
-</form>
-</fieldset>
+        </form>
+    </fieldset>
 </section>
 
 </body>
