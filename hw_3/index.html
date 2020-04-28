@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML</title>
-
     <style>
+         body {
+             padding-left: 15px;
+         }
          table {
             border:1px solid #4d4d4d;
             border-spacing: 5px;
@@ -14,16 +16,38 @@
             padding: 5px;
             text-align: left;
         } 
+        #form {
+            margin-top: 50px;
+        }
+        fieldset {
+            border:none;
+            padding: 0;
+        }
+        legend {
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            margin: 10px 0;
+        }
+        select {
+            margin-top: 20px;
+            width: 200px;
+        }
+        textarea {
+            margin-top: 20px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
     </style>
-
 </head>
 
 <body>
     
 <h1>Homework #3</h1>
-
+<section class="table">
 <h2>Table</h2>
-
 <table>
     <caption style="text-align:left; margin-bottom:5px;">Table with fake data</caption>
     <tr>
@@ -58,15 +82,48 @@
     </tr>
   
 </table>
+</section>
 
+<section id="form">
+<h2>Form</h2>
 
+<fieldset>
+    <legend><b>Form description here</b></legend>
+<form>
+<input type="text" id="first_name" name="first_name" value="Введіть ваше ім'я"> <br>
+<input type="text" id="second_name" name="second_name" value="Введіть ваше прізвище">
+<p>Вкажіть вашу стать:</p>
+<input type="radio" id="female" name="gender" value="female" checked>
+<label for="female">Жіноча</label><br>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Чоловіча</label><br>
+<textarea id="comment" name="comment" rows="10" cols="30">
+Напишіть свій коментарій...
+</textarea>    
 
+<div>
+    <select id="city" name="city"> 
+        <option value="placeholder" selected disabled>Виберіть місто:</option>
+        <option value="Kyiv">Київ</option>
+        <option value="Charkiv">Харків</option>
+        <option value="Odesa">Одеса</option>
+        <option value="Dnipro">Дніпро</option>
+        <option value="Lviv">Львів</option>
+    </select>
+</div>
 
+<p>Виберіть мову:</p>
+<div><input type="checkbox" id="uk" name="uk">
+<label for="uk">Українська</label></div>
+<div><input type="checkbox" id="ru" name="ru">
+<label for="ru">Російська</label></div>
+<div><input type="checkbox" id="en" name="en">
+<label for="en">Англійська</label></div>
+<input type="submit" value="Відправити">
 
-
-
-
-
+</form>
+</fieldset>
+</section>
 
 </body>
 </html>
