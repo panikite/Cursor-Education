@@ -1,0 +1,239 @@
+html {
+    font-size: 16px;
+}
+body {
+    background-color: #2c2c2c;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-top: 50px;
+    
+    width: 800px;
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+/* General Table settings */
+
+.table {
+    margin-top: 40px;
+    width: 100%;
+    overflow: hidden;
+    
+    border: 1px solid #6d6d6d;
+    border-spacing: 0;
+    border-radius: 5px;
+}
+th {
+    height: 45px;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 0.8rem;
+}
+
+td {
+    padding: 4px 15px 4px 15px;
+    text-align: left;
+    padding-left: 15px;
+    border-top: 1px solid #6d6d6d;
+}
+
+tbody .table-row:hover {
+    background-color: #232324;
+}
+.name-info {
+    width: 50%;
+}
+.date-info {
+    width: 30%;
+    color: #898989;
+}
+.item-action {
+    width: 20%;
+    text-align: end;
+}
+
+
+/* Triangle element in first th */
+
+.table-heading.table-heading--name:after {
+    content: "";
+    display: inline-block;
+    height: 0;
+    width: 0;
+   
+    transform: translateY(-25%);
+    margin-left: 10px;
+
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+
+}
+.table-heading--name:hover:after {
+    cursor: pointer;
+    border-top: 6px solid #007ed6;
+}
+
+/* dots element */
+
+.dot {
+    position: relative;
+
+    content: "";
+    display: inline-block;
+    width:4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.dot:before,
+.dot:after {
+    position: absolute;
+
+    content: "";
+    display: inline-block;
+    width:4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.dot:before {
+    left: -8px;
+}
+.dot:after {
+    left: 8px;
+}
+.dot_area {
+    display: inline-block;
+    padding: 8px 10px 12px 15px;
+}
+.dot_area:hover {
+    cursor: pointer;
+}
+.dot_area:hover .dot,
+.dot_area:hover .dot:before,
+.dot_area:hover .dot:after {
+    background-color: #007ed6;
+}
+
+.dot_area.dot--disabled:hover {
+    cursor: default;
+}
+.dot_area.dot--disabled .dot,
+.dot_area.dot--disabled .dot:before,
+.dot_area.dot--disabled .dot:after {
+    background-color: #767676;
+}
+
+
+/* Table #3 */
+
+.table.table--three .table-heading--name {
+    width: 74%;
+}
+.table.table--three .table-heading--date {
+    width: 11%;
+}
+.table.table--three .table-heading--search {
+    width: 15%;
+}
+
+.table.table--three .name-info:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 3px;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+
+    background-image: url(./img/inbox.svg);
+
+}
+
+/* Input for search */
+
+input[type="search"] {
+    padding-left: 30px;
+    height: 36px;
+    width: 200px;
+    border: 2px solid transparent;
+    background-color: #444444;
+    border-radius: 5px;
+}
+.search-input {
+    position: relative;
+    left: -4px;
+}
+.search-input:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    font-size: 0.8rem;
+    color: #a2a2a2;
+    content:"\f002";
+    top: 3px;
+    left: 8px;
+}
+input[type="search"]:focus {
+    outline: none;
+    background-color: #313135;
+    border: 2px solid #007ed6;
+    color: #fff;
+}
+
+/* Custom checkbox */
+
+.custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.custom-checkbox+label {
+    position: relative;
+    padding-left: 34px;
+}
+.custom-checkbox+label:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top:0;
+    left: 0px;
+    
+    width:16px;
+    height: 16px;
+    border: 1px solid #878787;
+    background-color: #3b3b3b;
+    border-radius: 3px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70% 70%;
+}
+.table-heading--name .custom-checkbox+label:before {
+    top: 2px;
+}
+.custom-checkbox:hover+label:before {
+    border-color: #19a0fc;
+}
+.custom-checkbox:checked+label:before {
+    border-color: #19a0fc;
+    background-color: #19a0fc;
+    background-image: url('./img/check-icon.svg');
+}
+.custom-checkbox.custom-checkbox--th:checked+label:before {
+    border-color: #19a0fc;
+    background-color: #19a0fc;
+    background-image: url('./img/minus-icon.svg');
+}
