@@ -48,11 +48,14 @@ html, body {
 }
 .nav-menu-item {
     margin-right: 20px;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1rem;
     line-height: 1.21rem;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+.nav-menu-item--active {
+    font-weight: bold;
 }
 .nav-menu-item>a {
     position: relative;
@@ -156,7 +159,7 @@ html, body {
     text-align: center;
     font-weight: 600;
     font-size: 1.71rem;
-    line-height: 150%;
+    line-height: 2.6rem;
     color: #fff;
 }
 .hero-title::selection, .hero-text::selection {
@@ -168,7 +171,7 @@ html, body {
 /* Buttons */
 .btn {
     border-radius: 6px;
-    font-weight: 600;
+    font-weight: normal;
 
     font-size: 1rem;
     line-height: 1.21rem;
@@ -180,6 +183,7 @@ html, body {
     background: #FFFFFF;
 
     color: #ED4C5C;
+    font-weight: 600;
     transition: .2s linear;
 }
 .btn.btn-filled:hover {
@@ -194,6 +198,7 @@ html, body {
     background: transparent;
 
     color: #fff;
+    font-weight: normal;
 
     transition: .2s linear;
 }
