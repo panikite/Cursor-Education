@@ -86,15 +86,17 @@ html, body {
     display: flex;
     align-items: center;
 }
+.header-language {
+    margin-right: 55px;
+}
 .header-language:hover{
     cursor: pointer;
 }
 .header-language-img {
-    margin-right: 12px;
+    margin-right: 10px;
 }
 .header-language-en {
     position: relative;
-    margin-right: 55px;
     font-size: 1rem;
     line-height: 1.21rem;
     color: #FFFFFF;
@@ -106,13 +108,13 @@ html, body {
     position: absolute;
     width: 0;
     height: 0;
-    top:50%;
-    left:32px;
+    bottom: 0;
+    left:30px;
     transform: translateY(-50%);
 
-    border: 6px solid #fff;
-    border-left-color: transparent;
-    border-right-color: transparent;
+    border: 8px solid #fff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
     border-bottom: none;
 }
 .header-language-en:hover:after{
@@ -128,7 +130,7 @@ html, body {
                       url(./img/hero_screen_bg.jpg);
     background-color:#C4C4C4;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
 
     display: flex;
@@ -137,7 +139,7 @@ html, body {
 }
 .hero_content {
     text-align: center;
-    padding-top: 90px;
+    padding-top: 45px;
     max-width: 650px;
 }
 .hero-title {
