@@ -504,6 +504,13 @@ form .select-list {
 @media screen and (max-width: 576px) {
     .stores-icons {
         width: 40%;
+        justify-content: center;
+    }
+    .store-icon-item {
+        margin-right: 20px;
+    }
+    .stores-icons a:last-child svg{
+        margin-right: 0;
     }
     .form-name,
     .form-surname {
