@@ -26,25 +26,28 @@ html, body {
 .savings-inner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     
 }
 .savings-content {
-    max-width: 40%;
-    padding-right: 5%;
+    max-width: 35%;
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
 }
 .savings-title {
-    margin-bottom: 50px;
     font-size: 2.57rem;
     font-weight: 600;
     line-height: 3rem;
     color: #fff;
 }
 .savings-text {
-    margin-bottom: 45px;
     font-size: 1rem;
     line-height: 140%;
     color: #fff;
-    text-align: justify
+    text-align: justify;
 }
 .stores-icons {
     display: flex;
@@ -65,7 +68,7 @@ html, body {
 /* Slider */
 
 .slider {
-    max-width: 60%;
+    max-width: 50%;
     position: relative;
     z-index: 0;
     margin-left: auto;
@@ -83,6 +86,7 @@ html, body {
 }
 .slider-item.active:hover {
     filter: drop-shadow(0px 10px 25px #6a111a);
+    cursor: pointer;
 }
 .slider-item.left {
     position: absolute;
@@ -108,6 +112,7 @@ html, body {
 .slider-item.left:hover,
 .slider-item.right:hover {
     filter: drop-shadow(0px 3px 5px #6a111a);
+    cursor: pointer;
 }
 
 /* Section - Contact */
@@ -170,7 +175,7 @@ html, body {
     background-color: #fff;
     border:1px solid #333333;
     border-radius: 6px;
-    padding-left: 30px;
+    padding: 0 30px;
     color: #333333;
     font-size: 1.14rem;
 }
@@ -310,10 +315,7 @@ form .select-list {
     }
     .savings-content {
         max-width: 40%;
-        padding-right: 0;
-    }
-    .savings-title {
-        margin-bottom: 35px;
+        min-height: 280px;
     }
     .slider {
         width: 45%;
@@ -390,28 +392,25 @@ form .select-list {
     .savings-content {
         max-width: 80%;
         text-align: center;
-        display:flex;
-        flex-direction: column;
         align-items:center;
+        min-height:250px;
+        margin-bottom: 30px;
     }
     .savings-title {
-        margin-bottom: 20px;
         font-size: 2.57rem;
         font-weight: 600;
         line-height: 3rem;
         color: #fff;
     }
     .savings-text {
-        margin-bottom: 15px;
         font-size: 1rem;
         line-height: 140%;
         color: #fff;
         text-align: center;
     }
     .stores-icons {
-        margin-bottom: 45px;
         width: 30%;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .store-icon-item {
         margin-right: 0;
