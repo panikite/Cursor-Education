@@ -20,14 +20,16 @@ html, body {
 /* Header */
 .header_inner {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding-top: 45px;
 }
-
+.header_logo {
+    width: 15%;
+}
 .nav {
     display: flex;
-    min-width: 350px;
+    min-width: 325px;
     justify-content: space-between;
 }
 .nav_item a {
@@ -47,6 +49,7 @@ html, body {
     color: #F063B8;
 }
 .header_btn {
+    margin-left: auto;
     width: 25%;
     display: flex;
     justify-content: flex-end;
@@ -117,7 +120,7 @@ html, body {
     color: #FFFFFF;
     font-size: 1.125‬rem;
     background: #9C69E2;
-    padding: 0 37px;
+    padding: 0 42px;
 }
 .btn--violet:hover {
     color: #fff;
@@ -128,7 +131,7 @@ html, body {
     color: #FFFFFF;
     font-size: 1.125‬rem;
     background: #F063B8;
-    padding: 0 37px;
+    padding: 0 42px;
     border:2px solid transparent;
 }
 .btn--pink:hover {
@@ -175,7 +178,7 @@ html, body {
     position: relative;
 }
 .intro_inner {
-    height: 80vh;
+    height: 78vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,27 +192,35 @@ html, body {
     align-items: flex-start;
 }
 .main_title {
-    font-family: Helvetica;
+    font-family: 'Helvetica';
     font-weight: bold;
     font-size: 5rem;
     line-height: 110%;
     color: #212353;
+    letter-spacing: 0.03em;
 }
 .text {
-    max-width: 50%;
+    max-width: 55%;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 160%;
+
+    color: #4B5D68;
 }
 .intro_img {
     position: absolute;
-    top: 35%;
-    left: 38%;
+    top: 31%;
+    left: 40%;
 
 }
 
 
 /* We are */
 .weare {
-    padding: 50px 0;
-    margin-top: 100px;
+    margin-bottom:50px;
+    margin-top: 60px;
 }
 .weare_inner {
     display: flex;
@@ -224,7 +235,7 @@ html, body {
 }
 .weare_content {
     display: flex;
-    width: 43%;
+    width: 47%;
     flex-direction: column;
     justify-content: space-between;
     min-height: 300px;
@@ -232,7 +243,8 @@ html, body {
 
 /* Features */
 .features {
-    padding: 50px 0;
+    padding-top: 100px;
+    padding-bottom: 40px;
 }
 .features_inner {
     text-align: center;
@@ -246,17 +258,18 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 125px 0 45px 0;
+    padding-top: 170px;
 }
 .feature_item {
-    flex-basis: 46%;
+    flex-basis: 50%;
+    padding-right: 5%;
+    margin-bottom: 140px;
 
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 
     text-align: left;
-    height: 375px;
 }
 .feature_img {
     height: auto;
@@ -265,8 +278,8 @@ html, body {
 .feature_text {
     display: flex;
     flex-direction: column;
-    max-width: 250px;
-    height: 250px;
+    max-width: 220px;
+    height: 270px;
 }
 .feature_title{
     font-family: Helvetica;
@@ -322,6 +335,7 @@ html, body {
     min-height: 580px;
     display: flex;
     flex-direction: column;
+    height: 710px;
 }
 .testimonials_inner .section_title {
     margin-bottom: 90px;
@@ -334,7 +348,7 @@ html, body {
     min-height: 330px;
 
     background: #FFFFFF;
-    box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+    box-shadow: 0px 20px 0px #8a56dc;
     border-radius: 20px;
 }
 .testimonials_slider img {
@@ -496,7 +510,7 @@ html, body {
 .footer_inner {
     display: grid;
     grid-template-columns: 40% 20% 20% 20%;
-    grid-template-rows: 160px 380px 50px;
+    grid-template-rows: 90px 160px 380px 50px;
     justify-items: left;
 }
 .footer_title {
@@ -510,14 +524,22 @@ html, body {
 }
 .footer_text {
     grid-column: 1 / span 2;
-    align-self: start;
     display: flex;
     flex-direction: column;
-    min-height: 50px;
-    justify-content: space-between;
+    min-height: 90px;
+}
+.footer_text .section_title {
+    margin-bottom: 20px;
 }
 
-
+.footer .btn.btn--pink {
+    align-self:center;
+    justify-self: end;
+}
+.footer .btn.btn--demo {
+    align-self:center;
+    justify-self: end;
+}
 .footer_logo {
     display: flex;
     margin-bottom: 25px;
@@ -534,7 +556,18 @@ html, body {
 
     color: #212353;
 }
-
+.footer_contact {
+    grid-row:3/4;
+}
+.footer_about {
+    grid-row:3/4;
+}
+.footer_help {
+    grid-row:3/4;
+}
+.footer_social {
+    grid-row:3/4;
+}
 .footer_address {
     font-family: 'Avenir';
     font-style: normal;
@@ -602,6 +635,7 @@ html, body {
 }
 
 .footer_copyright {
+    grid-row: 4/5;
     align-self: center;
     font-family: 'Avenir';
     font-style: normal;
@@ -612,6 +646,7 @@ html, body {
     color: #212353;
 }
 .footer_message {
+    grid-row: 4/5;
     grid-column-start: 4;
     justify-self: end;
     align-self: center;
