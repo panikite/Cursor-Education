@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./fonts/Helvetica.ttf');
+    font-weight: normal;
+    font-style:normal;
+    }
+
+@font-face {
+    font-family: 'Helvetica Bold';
+    src: url('./fonts/Helvetica-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('./fonts/AvenirLTStd-Roman.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir Bold';
+    src: url('./fonts/AvenirLTStd-Black.otf');
+    font-weight: bold;
+    font-style: normal;
+    }
+
+    
