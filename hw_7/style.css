@@ -403,8 +403,8 @@ html, body {
     align-items: center;
     justify-content: center;
     width: 48%;
-    padding-left: 35px;
-    padding-right: 15px;
+    padding-left: 6.8%;
+    padding-right: 6.8%;
 
     background: #F5F5F7;
     border-radius: 14px;
@@ -419,8 +419,9 @@ html, body {
     font-style: normal;
     font-weight: 700;
     font-size: 4.92rem;
-    line-height: 159.375%;
+    line-height: 145%;
     margin-right: 16px;
+    margin-top: 5px;
 
     color: #000000;
 }
