@@ -1,0 +1,570 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    min-width: 1100px;
+    width: 100%;
+    min-height: 600px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color:#000000;
+}
+
+.container {
+    padding: 24px 30px 0 30px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 132px 50% 39%;
+    /* background-color: pink; */
+    column-gap: 30px;
+}
+/* .col-1 {
+    background-color: darkcyan;
+}
+.col-2 {
+    background-color: greenyellow;
+}
+.col-3 {
+    background-color: lightcoral;
+} */
+
+.menu_panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* min-height: 90vh; */
+    min-height: 852px;
+    padding-bottom: 40px;
+    background: #000000;
+    border-radius: 24px;
+
+    box-shadow: 11px 14px 56px 1px rgba(0,0,0,0.4);
+}
+.menu_logo {
+    font-family: 'Baloo Bhai 2';
+    font-size: 4.923rem;
+    font-weight: 700;
+    line-height: 159.3%;
+    color: #fff;
+}
+.menu_logo:hover {
+    cursor: pointer;
+    color: #8930dd;
+}
+.menu_nav {
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav_icon,
+.nav_logout {
+    width: 54px;
+    height: 54px;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s linear;
+    box-shadow: 0px 0px 0px 0px rgba(107,33,107,0);
+}
+.nav_icon:hover,
+.nav_logout:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 35px 0px rgba(107,33,107,1);
+}
+
+
+/* Button */
+.btn_container {
+    margin-left: auto;
+}
+.btn_fill {
+    width: 120px;
+    height: 40px;
+
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 115.3%;
+
+    background-image: linear-gradient(to right, #000, #000, #000,#000,#000, #2bb673, #2bb673);
+    background-size: 300% 100%;
+    transition: all .6s ease-in-out;
+}
+.btn_fill:hover {
+    background-image: linear-gradient(to right, #000, #be40e4, #8930dd, #2bb673,#000, #000, #000);
+    background-position: 100% 0;
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    margin-top: 32px;
+
+    position: relative;
+    padding: 40px 0 40px 34px;
+
+    background: #F5F5F7;
+    border-radius: 14px;
+}
+.intro_title {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 57px;
+
+    color: #000000;
+}
+.intro_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.23rem;
+    line-height: 150%;
+
+    color: #000000;
+}
+.intro_illustration {
+    position: absolute;
+    top: -32px;
+    right: 14%;
+}
+.intro:hover .intro_illustration > svg .boy_shirt {
+    fill: #8930dd;
+}
+
+/* Active Course */
+.activecourse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+.section_title {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+
+    color: #000000;
+}
+.courses_filters {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.filter_item {
+    margin-right: 32px;;
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #000000;
+    opacity: 0.3;
+}
+.filter_item:hover {
+    cursor: pointer;
+    color: #8930dd;
+    opacity: 1;
+}
+.filter_item.active {
+    opacity: 1;
+}
+.activecourse_content {
+    display: flex;
+    align-items: center;
+    min-width: 80.645%;
+    max-width: 84.645%;
+    padding: 8px 23px 8px 8px;
+    flex-grow:1;
+
+    background: #F5F5F7;
+    border-radius: 14px;
+
+    transition: .2s linear;
+}
+.activecourse_content:hover {
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+}
+.course_content {
+    transition: .2s linear;
+}
+.course_content:hover {
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+}
+.course_thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    margin-right: 24px;
+
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+.course_info {
+    width: 37.645%;
+}
+.course_title {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.23rem;
+    line-height: 200%;
+
+    color: #000000;
+}
+
+.progress_chart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-image: conic-gradient(#f5f5f7 62deg, black 62deg 360deg);
+}
+.progress_chart:after {
+    position: absolute;
+    content: "";
+    display: block;
+    border-radius: 50%;
+
+    top: 8%;
+    left: 25%;
+    transform: translateX(-20%);
+    background-color: #f5f5f7;
+    width: 35px;
+    height: 35px;
+}
+.progress_num {
+    position: relative;
+    z-index: 10;
+}
+.active_controls {
+    display: flex;
+    justify-content: space-between;
+    min-width: 12%;
+}
+.active_controls .arrow_prev {
+    margin-right: 16px;
+    margin-left: 10px;
+}
+.active_controls .arrow_prev,
+.active_controls .arrow_next {
+    stroke: black;
+
+}
+.active_controls .arrow_prev:hover,
+.active_controls .arrow_next:hover,
+.active_controls .arrow_prev:hover .svg_arrow,
+.active_controls .arrow_next:hover .svg_arrow {
+    cursor: pointer;
+    stroke: #8930dd;
+}
+
+/* Courses */
+
+.course_content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    min-height: 80px;
+    padding: 8px 23px 8px 8px;
+
+    background: #F5F5F7;
+    border-radius: 14px;
+}
+.activecourse_info {
+    width: 30.645%;
+}
+.course_time {
+    width: 19.35%;
+    display: flex;
+    align-items: center;
+}
+.course_rate {
+    width: 11.61%;
+    display: flex;
+    align-items: center;
+}
+.course_time > svg,
+.course_rate > svg {
+    margin-right: 10px;
+}
+
+
+
+/* Top Bar */
+
+.topbar {
+    display: flex;
+    align-items: center;
+}
+.topbar_search {
+    width: 68.18%;
+    height: 40px;
+    padding-left: 50px;
+    border: none;
+
+    background: #F5F5F7;
+    border-radius: 8px;
+    background-image: url('./img/icons/search_icon.svg');
+    background-repeat: no-repeat;
+    background-position: 4% 50%;
+
+    font-size: 1rem;
+    color: #000;
+}
+.alarm {
+    position: relative;
+    margin-left: 8.18%;
+    margin-right: 24px;
+}
+.alarm_icon {
+    transition: .2s linear;
+}
+.alarm_icon:hover {
+    cursor: pointer;
+    transform: rotate(15deg);
+}
+.alarm_count {
+    position: absolute;
+    z-index: 10;
+    right: -20%;
+    top:-15%;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 0.769rem;
+    line-height: 170%;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    text-align: center;
+
+    background: #F45B5B;;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.profile:hover {
+    cursor: pointer;
+}
+.profile_img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    background: #F5F5F7;
+    border-radius: 8px;
+
+    background-image: url('./img/user_avatar.png');
+    background-position: center center;
+
+    transition: .2s linear;
+}
+.profile:hover .profile_img {
+    box-shadow: 0px 0px 5px 1px rgba(107,33,107,1);
+}
+.dropdown_arrow > svg .arrow {
+    stroke:#000000;
+    stroke-width:0.5;
+}
+.profile:hover .dropdown_arrow > svg .arrow {
+    stroke: #8930dd;
+}
+
+
+/* Stat blocks */
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.stat_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    padding: 10px 30px 5px 30px;
+
+    background: #F5F5F7;
+    border-radius: 14px;
+
+    transition: .2s linear;
+}
+.stat_content:hover {
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+}
+.stat_number {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.92rem;
+    line-height: 159.375%;
+    margin-right: 16px;
+
+    color: #000000;
+}
+.stat_text {
+    width: 36.53%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.23rem;
+    line-height: 184.6%;
+
+    color: #000000;
+}
+
+
+/* Statistics */
+
+.statistics {
+    margin-top: 50px;
+}
+.statistic_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.statistic_select {
+    position: relative;
+}
+.select_input {
+    width: 88px;
+    height: 32px;
+    padding-left: 16px;
+    padding-right: 5px;
+    background: #F5F5F7;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 115%;
+    color: #000000;
+}
+.select_arrow {
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+
+    right: 12px;
+    display:inline-block;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: rotate(135deg);
+}
+.chart_container {
+    width: 100%;
+}
+.my_chart {
+    height: auto
+}
+
+/* Custom Tooltip */
+.tooltip {
+    opacity: 0;
+    position: absolute;
+    padding-left: 8px;
+    padding-top: 5px;
+    
+    display: flex;
+    justify-content: center;
+    
+    display: block;
+    width: 50px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 3px 7px 28px 0px rgba(0,0,0,0.3);
+}
+
+.tooltip:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    left:42%;
+    bottom:-15%;
+   
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+
+/* Premium */
+
+.premium {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 193px;
+    padding: 34px 50px 17px 24px;
+
+    background: #F5F5F7;
+    border-radius: 14px;
+
+    transition: .2s linear;
+}
+.premium:hover {
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+}
+.premium_content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.premium_text {
+    margin-bottom: 15px;
+}
+.premium_content > .btn_fill {
+    margin-left: 0;
+}
+.premium_content h2 {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #000000;
+}
+.premium_content p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
