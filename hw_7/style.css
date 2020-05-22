@@ -12,13 +12,13 @@ html, body {
 }
 
 .container {
-    padding: 24px 30px 0 30px;
+    padding: 24px 30px 0 32px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 132px 50% 39%;
+
+    grid-template-columns: 132px 45% 33%;
     /* background-color: pink; */
-    column-gap: 30px;
-}
+    column-gap: 70px;}
 /* .col-1 {
     background-color: darkcyan;
 }
@@ -37,7 +37,8 @@ html, body {
 
     /* min-height: 90vh; */
     min-height: 852px;
-    padding-bottom: 40px;
+    padding-top: 17px;
+    padding-bottom: 28px;
     background: #000000;
     border-radius: 24px;
 
@@ -55,7 +56,8 @@ html, body {
     color: #8930dd;
 }
 .menu_nav {
-    height: 42vh;
+    height: 45vh;
+    margin-bottom: 146px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
