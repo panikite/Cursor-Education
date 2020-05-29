@@ -1,0 +1,186 @@
+    .container {
+        padding: 0 20px;
+    }
+    .intro {
+        background-image: none;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    .intro_wrapper {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .intro_logo {
+        margin-bottom: 86px;
+    }
+    .intro_title {
+        font-size: 1.875rem;
+    }
+    .button.button_apple > img,
+    .button.button_google > img {
+        max-width: 90%;
+    }
+
+    .experience {
+        background-image: linear-gradient(to bottom,rgb(255,255,255,1) 30%, rgb(255, 255, 255,0.3) 100%), url('./img/optimized/experience_bg_600.png') ;
+        background-position: bottom center;
+        background-size: auto 100%;
+    }
+    .experience_wrap {
+        flex-direction: column;
+        
+    }
+    .experience_images {
+        order:1;
+        width: 320px;
+    }
+    .experience_images {
+        position: relative;
+        flex-basis: 90%;
+        min-height: 230px;
+    }
+    .experience_img1{
+        position: absolute;
+        max-width: 60%;
+        top: 31%;
+        left: 30%;
+    }
+    .experience_img2{
+        position: absolute;
+        max-width: 70%;
+        top: 2px;
+        left: -10%;
+    }
+    .experience_content {
+        max-width: 100%; 
+        padding-top: 60px;
+        padding-bottom: 55px;
+        padding-right: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+
+
+    .interface {
+        width: 100%;
+        min-height: 716px;
+        background-image: url('./img/optimized/interface_bg_915.png');
+        background-size: auto 530px;
+        background-repeat: no-repeat;
+        background-position: 80% 100%;
+    
+    }
+    .interface_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 580px;
+        text-align: center;
+        padding-right: 0;
+    }
+
+
+    .features {
+        background-image: none;
+        padding-bottom: 30px;
+    }
+    .feature_item {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .features .experience_title {
+        color: #333333;
+    }
+    .feature_img {
+        fill: #00adee;
+    }
+    .feature_text {
+        color: #333333;
+    }
+    
+
+   .feedbacks {
+       padding-top: 30px;
+   }
+   .feedbacks_slider {
+       padding-top: 5px;
+   }
+   .controls_prev {
+       display: none;
+       top:-5px;
+   } 
+   .controls_next {
+       width: 80px;
+       background: none;
+       top:-5px;
+   }
+   .feedbacks_list {
+       margin-left: 26px;
+       margin-right: 0;
+       margin-bottom: 30px;
+   }
+   .feedbacks_item {
+       flex-basis: 90%;
+       flex-grow: 1;
+       min-width: 85%;
+       margin-right: 26px;
+       min-height: 150px;
+   }
+
+    .partners_wrapper {
+        padding-top: 0;
+    }
+    .partners_logo {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+
+    .contact {
+        padding-top: 60px;
+        padding-bottom: 0;
+
+        background-image: none;
+    }
+    .contact_content {
+        max-width: 100%;
+        text-align: center;
+        padding-right: 0;
+        align-items: center;
+    }
+    .contact_img {
+       display: block;
+       margin-top: 24px;
+       background-image: url('./img/optimized/contact_bg_600.png');
+    }
+
+
+
+    .footer_wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .footer_nav {
+        order:1;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer_link > a {
+        font-size: 12px;
+        padding-right: 0;
+    }
+    .footer_social {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .social_icon:first-child {
+        margin-left: 0;
+    }
+
+

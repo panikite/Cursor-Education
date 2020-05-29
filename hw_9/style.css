@@ -1,22 +1,72 @@
-
+* {
+    box-sizing: border-box;
+}
 html,body {
     width: 100%;
+    margin:0;
+    padding: 0;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color:#4F4F4F;
-    box-sizing: border-box;
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1130px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
+
+
+
+/* Intro */
+.intro {
+    width: 100%;
+    background-image: url('./img/optimized/intro_bg_814.png');
+    background-repeat: no-repeat;
+    background-size: 55% auto;
+    background-position: top right;
+
+    background-color: #F4F6F9;
+    padding-top: 64px;
+    padding-bottom: 164px;
+}
+.intro_wrapper {
+  display:flex;
+  flex-direction: column;
+  max-width: 50%;
+  min-height: 470px;
+}
+.intro_logo {
+    margin-bottom: auto;
+}
+.intro_title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 133%;
+    letter-spacing: 0.03em;
+
+    color: #333333;
+    margin-bottom: 30px;
+}
+.intro_text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 144%;
+
+    color: #4F4F4F;
+    margin-bottom: 30px;
+    max-width: 85%;
+}
 .buttons_wrapper {
     display: flex;
     justify-content: space-between;
-    width: 340px;
+    max-width: 340px;
     margin-top: 20px;
 }
 .button {
@@ -29,58 +79,12 @@ html,body {
 }
 
 
-/* Intro */
-.intro {
-    /* min-height: 665px; */
-    background-image: url('./img/optimized/intro_bg3.png');
-    background-repeat: no-repeat;
-    background-size: auto 90%;
-    background-position: top right;
-
-    background-color: #F4F6F9;
-    padding-top: 64px;
-    padding-bottom: 164px;
-}
-.intro_wrapper {
-  display:flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  max-width: 50%;
-  min-height: 470px;
-}
-.intro_logo {
-    margin-bottom: auto;
-}
-.intro_title {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 0.03em;
-
-    color: #333333;
-    margin-bottom: 30px;
-}
-.intro_text {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
-
-    color: #4F4F4F;
-    margin-bottom: 30px;
-    max-width: 85%;
-}
-
-
-
 
 /* Experience */
 .experience {
+    width: 100%;
     min-height: 592px;
-    background-image: linear-gradient(to left,rgb(255,255,255,1) 60%, rgb(255, 255, 255,0.3) 90%), url('./img/optimized/experience_bg.png') ;
+    background-image: linear-gradient(to left,rgb(255,255,255,1) 60%, rgb(255, 255, 255,0.3) 90%), url('./img/optimized/experience_bg_1480.png') ;
     background-position: top left;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -88,7 +92,6 @@ html,body {
 .experience_wrap {
     display: flex;
     align-items: center;
-    /* background: red; */
 }
 .experience_images {
     position: relative;
@@ -97,34 +100,29 @@ html,body {
 }
 .experience_img1{
     position: absolute;
-    width: 360px;
+    max-width: 360px;
     top: 20%;
     left: 16%;
 }
 .experience_img2{
     position: absolute;
-    width: 360px;
+    max-width: 360px;
     top: 0;
     left: -55px;
 }
 .experience_content {
-    margin: auto;
-    /* background: green; */
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+    max-width: 50%;
     padding-top: 130px;
     padding-bottom: 120px;
-    padding-left: 50px;
-    padding-right: 50px;
-
 }
 .experience_suptitle {
     font-family: 'Lato';
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 131.25%;
 
     color: #00ADEE;
     margin-bottom: 27px;
@@ -133,8 +131,8 @@ html,body {
     font-family: 'Lato';
     font-style: normal;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 37px;
+    font-size: 1.75rem;
+    line-height: 132%;
 
     margin-bottom: 30px;
 
@@ -144,8 +142,8 @@ html,body {
     font-family: 'Lato';
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 1rem;
+    line-height: 143.75%;
 
     color: #4F4F4F;
     margin-bottom: 27px;
@@ -180,9 +178,10 @@ html,body {
 
 /* Interface */
 .interface {
+    width: 100%;
     min-height: 716px;
-    background-image: url('./img/optimized/interface_bg.png');
-    background-size: auto 100%;
+    background-image: url('./img/optimized/interface_bg_1480.png');
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center right;
 
@@ -194,8 +193,6 @@ html,body {
     padding-top: 215px;
     padding-bottom: 170px;
     padding-right: 100px;
-/* 
-    background: red; */
 }
 
 
@@ -204,7 +201,8 @@ html,body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    padding: 76px 10px 66px 10px;
+    padding-top: 76px;
+    padding-bottom: 66px;
 }
 .features .experience_title {
     color: #fff;
@@ -226,13 +224,14 @@ html,body {
     height: 30px;
     width: auto;
     margin-bottom: 15px;
+    fill: #fff;
 }
 .feature_text {
     font-family: 'Lato';
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 1rem;
+    line-height: 143.75%;
 
     color: #FFFFFF;
 }
@@ -250,20 +249,26 @@ html,body {
 
 /* Feedbacks */
 .feedbacks {
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 .feedbacks > .experience_title {
     text-align: center;
+}
+.feedbacks_slider {
+    overflow: hidden;
 }
 .feedbacks_list {
     position: relative;
     display: flex;
     justify-content: space-between;
-    /* flex: 1 1; */
+
     margin-left: -150px;
     margin-right: -150px;
     margin-bottom: 45px;
+
 }
 .feedbacks_item {
     flex-basis: 18%;
@@ -294,8 +299,8 @@ html,body {
 .feedbacks_name {
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 118.75%;
 
     color: #333333;
 }
@@ -305,8 +310,8 @@ html,body {
 .feedbacks_text {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 0.875rem;
+    line-height: 128.5%;
 
     color: #4F4F4F;
 }
@@ -331,11 +336,15 @@ html,body {
     background-color: #828282;
 }
 
+.feedbacks_slider {
+    position: relative;
+}
 
 .controls_prev {
     position: absolute;
-    left:150px;
-    top:0;
+    z-index: 20;
+    left:0;
+    top:-20px;
     width: 200px;
     height: 100%;
 
@@ -346,8 +355,9 @@ html,body {
 }
 .controls_next {
     position: absolute;
-    right:150px;
-    top:0;
+    z-index: 20;
+    right:0;
+    top:-20px;
     width: 260px;
     height: 100%;
 
@@ -424,6 +434,7 @@ html,body {
 
 /* Partners */
 .partners {
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 80px;
 }
@@ -437,16 +448,21 @@ html,body {
 .partners .experience_title {
     text-align: center;
 }
+.partners_logo {
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 20px;
+}
 
 /* Contact */
 .contact {
-    background-image: url('./img/optimized/contact_bg.png');
+    width: 100%;
+    background-image: url('./img/optimized/contact_bg_1480.png');
     background-size: auto 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
     padding-top: 110px;
     padding-bottom: 100px;
-    /* min-height: 45vh; */
 }
 
 .contact_content {
@@ -457,9 +473,21 @@ html,body {
     margin-left: auto;
     max-width: 50%;
 }
+.contact_img {
+    display: none;
+    height: 260px;
+
+    background-image: url('./img/optimized/contact_bg_1106.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 
 /* Footer */
 .footer {
+    width: 100%;
     background-color: #00ADEE;
     color: #fff;
     padding: 50px 0;
@@ -468,6 +496,7 @@ html,body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .footer_logo {
     transition: .3s;
@@ -490,8 +519,8 @@ html,body {
     font-family: 'Lato';
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 131.25%;
     padding-right: 36px;
 
     color: #FFFFFF;
@@ -537,35 +566,3 @@ html,body {
 
 
 
-
-/* MEDIA */
-/* @media screen and (min-width:320px) and (max-width:768px) {
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .features {
-        background:none;
-    }
-    .features > .experience_title {
-        color: #333333;
-    }
-    .feature_item {
-        flex-basis: 100%;
-        align-items:center;
-        text-align: center;
-        
-        
-    }
-    .feature_img > svg {
-        fill: #00ADEE;
-    }
-    .feature_text {
-        color: #4F4F4F;
-    }
-
-
-    .partners_wrapper {
-        justify-content: space-around;
-    }
-} */

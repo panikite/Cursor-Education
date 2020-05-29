@@ -1,0 +1,148 @@
+
+    .intro {
+        background-image: none;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    .intro_wrapper {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;  
+    }
+    .intro_logo {
+        margin-bottom: 86px;
+    }
+    .button_apple,.button_google {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .experience {
+        background-image: linear-gradient(to bottom,rgb(255,255,255,1) 30%, rgb(255, 255, 255,0.3) 100%), url('./img/optimized/experience_bg_600.png') ;
+        background-position: bottom center;
+        background-size: auto 100%;
+    }
+    .experience_wrap {
+        flex-direction: column;
+        
+    }
+    .experience_images {
+        order:1;
+        width: 320px;
+    }
+    .experience_images {
+        position: relative;
+        flex-basis: 100%;
+    
+    }
+    .experience_img1{
+        position: absolute;
+        max-width: 90%;
+        top: 31%;
+        left: 30%;
+    }
+    .experience_img2{
+        position: absolute;
+        
+        top: -15px;
+        left: -35%;
+    }
+    .experience_content {
+        max-width: 80%; 
+        padding-top: 60px;
+        padding-bottom: 55px;
+        padding-right: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    
+
+    .interface {
+        width: 100%;
+        min-height: 716px;
+        background-image: url('./img/optimized/interface_bg_1058.png');
+        background-size: auto 530px;
+        background-repeat: no-repeat;
+        background-position: 112% 100%;
+    
+    }
+    .interface_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        padding-top: 60px;
+        padding-bottom: 580px;
+        padding-right: 0;
+        text-align: center;
+        margin: auto;
+        
+    }
+
+
+
+    .features {
+        background-image: none;
+        padding-bottom: 30px;
+    }
+    .features_list {
+        justify-content: space-around;
+    }
+    .feature_item {
+        flex-basis: 40%;
+        text-align: center;
+    }
+    .features .experience_title {
+        color: #333333;
+    }
+    .feature_img {
+        fill: #00adee;
+    }
+    .feature_text {
+        color: #333333;
+    }
+
+
+
+    .contact {
+        padding-top: 60px;
+        padding-bottom: 0;
+        background-image: none;
+    }
+    .contact_content {
+        max-width: 80%;
+        text-align: center;
+        
+        margin: auto;
+        padding-right: 0;
+        align-items: center;
+    }
+    .contact_img {
+       display: block;
+       margin-top: 24px;
+
+       background-image: url('./img/optimized/contact_bg_600.png');
+    }
+
+
+    
+    
+    .footer_wrapper {
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .footer_nav {
+        order:1;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer_link > a {
+        font-size: 12px;
+        padding-right: 0;
+    }
+  
+  

@@ -1,0 +1,108 @@
+
+    .container {
+        padding: 0 40px;
+    }
+    .intro {
+        padding-bottom: 100px;
+        background-position: 130% 0%;
+        background-image: url('./img/optimized/intro_bg_680.png');
+    }
+    .intro_wrapper {
+        max-width: 65%;
+        min-height: 400px;
+    }
+    .interface_wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .experience {
+        min-height: 400px;
+        padding-bottom: 10px;
+        background-image: linear-gradient(to left,rgb(255,255,255,1) 60%, rgb(255, 255, 255,0.3) 90%), url('./img/optimized/experience_bg_1106.png') ;
+    }
+   .experience_wrap {
+       flex-direction: row;
+   }
+    .experience_content {
+        padding-right: 0;
+        padding-left: 15px;
+        max-width: 50%;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .experience_images {
+        order:0;
+        max-width: 50%;
+    }
+    .experience_img1 {
+        max-width: 250px;
+        left: 19%;
+    }
+    .experience_img2 {
+        max-width: 300px;
+    }
+    .interface {
+        min-height: 400px;
+    }
+    .interface {
+        background-image: url('./img/optimized/interface_bg_1058.png');
+        background-size: 90% auto;
+        background-position: center right;
+    }
+    .interface_wrapper {
+        padding-right: 25px;
+        padding-left: 15px;
+        max-width: 45%;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .features {
+        background: url('./img/optimized/features_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .features_list {
+        justify-content: space-around;
+    }
+    .feature_item {
+        flex-basis: 40%;
+        text-align: center;
+    }
+    .features .experience_title {
+        color: #fff;
+    }
+    .feature_img {
+        fill: #fff;
+    }
+    .feature_text {
+        color: #fff;
+    }
+    .feedbacks {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .partners_logo {
+        margin-left: 14px;
+        margin-right: 14px;
+        margin-bottom: 20px;
+    }
+    .contact {
+        padding-top: 20px;
+        padding-bottom: 0;
+        background-position: -40% 100%;
+        background-image: none;
+    }
+    .contact_content {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+        max-width: 90%;
+        text-align: center;
+        align-items: center;
+    }
+    .contact_img {
+        display: block;
+    }
+    .contact .button_apple {
+        margin-right: 15px;
+    }

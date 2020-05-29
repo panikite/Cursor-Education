@@ -6,13 +6,17 @@
     <title>Responsive</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./media.css">
+    
+    
+    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1100px)" href="./tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 576px) and (max-width: 768px)" href="./phone_larg.css">
+    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 575px)" href="./phone.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
 <!-- Intro -->
-<div class="intro">
+<section class="intro">
     <div class="container">
         <div class="intro_wrapper">
             <div class="intro_logo">
@@ -35,7 +39,6 @@
                     </clipPath>
                     </defs>
                     </svg>
-                    
             </div>
             <h1 class="intro_title">
                 Get a personalized football experience tailored just for you
@@ -53,16 +56,16 @@
             </div>
         </div>
     </div> <!-- </.container -->
-</div>
+</section>
 
 
 <!-- Experience -->
-<div class="experience">
+<section class="experience">
     <div class="container">
         <div class="experience_wrap">
             <div class="experience_images">
-                <img class="experience_img1" src="./img/optimized/SAMPLE02.png" alt="">
-                <img class="experience_img2" src="./img/optimized/SAMPLE01.png" alt="">
+                <img class="experience_img1" src="./img/optimized/SAMPLE02.png" alt="interface block example"/>
+                <img class="experience_img2" src="./img/optimized/SAMPLE01.png" alt="match video player preview"/>
             </div>
             <div class="experience_content">
                 <h3 class="experience_suptitle">WHAT IT DOES</h3>
@@ -76,14 +79,14 @@
                     </a>
             </div>
         </div>
-        
     </div> <!-- </.container -->
-</div>
+</section>
+
 
 
 
 <!-- Interface -->
-<div class="interface">
+<section class="interface">
     <div class="container">
         <div class="interface_wrapper">
             <h3 class="experience_suptitle">GET STARTED</h3>
@@ -97,50 +100,90 @@
             </a>
         </div>
     </div> <!-- </.container -->
-</div>
+</section>
 
 
-
-
-
+<!-- Features -->
 <section class="features">
     <div class="container">
         <h2 class="experience_title">Features That Will Tailor Your Experience</h2>
         <ul class="features_list">
             <li class="feature_item">
-                <img class="feature_img" src="./img/icons/feat_1.svg" alt="sdsdsd"/>
+                <svg class="feature_img" version="1.1" x="0px" y="0px" width="38px" height="30px" viewBox="0 0 38 30" style="enable-background:new 0 0 38 30;">
+                <path class="st0" d="M34,0H4C2.2,0,0.7,1.5,0.7,3.3v20c0,1.8,1.5,3.3,3.3,3.3h8.3V30h13.3v-3.3H34c1.8,0,3.3-1.5,3.3-3.3l0-20
+                    C37.3,1.5,35.8,0,34,0z M34,23.3H4v-20h30V23.3z M25.7,13.3L14,20V6.7L25.7,13.3z"/>
+                </svg>
+
                 <p class="feature_text"> Video highlights for every Premier League and English Football League game</p>
             </li>
             <li class="feature_item">
-                <img class="feature_img" src="./img/icons/feat_2.svg" alt="sdsdsd"/>
+                <svg class="feature_img" version="1.1" x="0px" y="0px" width="34px" height="33px" viewBox="0 0 34 33" style="enable-background:new 0 0 34 33;">
+                <path class="st0" d="M9.6,2.8L7.3,0.4c-4,3.1-6.6,7.8-6.9,13.1h3.3C4,9.1,6.2,5.2,9.6,2.8z M30.3,13.5h3.3c-0.3-5.3-2.9-10-6.9-13.1
+                    l-2.4,2.4C27.8,5.2,30,9.1,30.3,13.5z M27,14.3c0-5.1-2.7-9.4-7.5-10.5V2.7c0-1.4-1.1-2.5-2.5-2.5c-1.4,0-2.5,1.1-2.5,2.5v1.1
+                    C9.7,4.9,7,9.2,7,14.3v8.3L3.7,26v1.7h26.7V26L27,22.7V14.3z M17,32.7c0.2,0,0.5,0,0.7-0.1c1.1-0.2,2-1,2.4-2
+                    c0.2-0.4,0.3-0.8,0.3-1.3h-6.7C13.7,31.2,15.2,32.7,17,32.7z"/>
+                </svg>
+
                 <p class="feature_text"> Notifications for your teams, including in-game goal clips and Premier League match highlights for Sky TV subscribers with Guardian.</p>
             </li>
             <li class="feature_item">
-                <img class="feature_img" src="./img/icons/feat_3.svg" alt="sdsdsd"/>
+                <svg class="feature_img" version="1.1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;">
+                <path class="st0" d="M26.7,0H3.3C1.5,0,0,1.5,0,3.3v23.3C0,28.5,1.5,30,3.3,30h23.3c1.8,0,3.3-1.5,3.3-3.3V3.3C30,1.5,28.5,0,26.7,0
+                    z M13.3,20h-2.5v-3.3H7.5V20H5V10h2.5v4.2h3.3V10h2.5V20z M16.7,10h6.7c0.9,0,1.7,0.8,1.7,1.7v6.7c0,0.9-0.8,1.7-1.7,1.7h-6.7V10z
+                    M19.2,17.5h3.3v-5h-3.3V17.5z"/>
+                </svg>
+
                 <p class="feature_text"> Brand new video section including dedicated areas for your chosen team, trending video, Premier League, Football league and other major leagues</p>
             </li>
             <li class="feature_item">
-                <img class="feature_img" src="./img/icons/feat_4.svg" alt="sdsdsd"/>
+                <svg class="feature_img" version="1.1" x="0px" y="0px"width="26px" height="29px" viewBox="0 0 26 29" style="enable-background:new 0 0 26 29;">
+                <path class="st0" d="M16,4l-0.7-3.3h-15V29h3.3V17.3H13l0.7,3.3h11.7V4H16z"/>
+                </svg>
+
                 <p class="feature_text"> Match pages showing live scores, commentary, team line-ups and enhanced match stats to keep you up-to-date on all the action</p>
             </li>
             <li class="feature_item">
-                <img class="feature_img" src="./img/icons/feat_5.svg" alt="sdsdsd"/>
+                <svg class="feature_img" version="1.1" x="0px" y="0px" width="35px" height="33px" viewBox="0 0 35 33" style="enable-background:new 0 0 35 33;">
+                <path class="st0" d="M2.2,28.7l2.2,0.9V14.6l-4.1,9.8C-0.3,26.1,0.5,28,2.2,28.7z M34.7,22.6l-8.3-20c-0.5-1.3-1.7-2-3-2
+                    c-0.4,0-0.9,0.1-1.3,0.3L9.8,5.9c-1.3,0.5-2,1.7-2,3c0,0.4,0.1,0.9,0.2,1.3l8.3,20c0.5,1.3,1.8,2,3,2.1c0.4,0,0.9-0.1,1.3-0.3
+                    l12.3-5.1C34.6,26.2,35.4,24.3,34.7,22.6z M11.1,10.6c-0.9,0-1.7-0.8-1.7-1.7c0-0.9,0.7-1.7,1.7-1.7c0.9,0,1.7,0.8,1.7,1.7
+                    C12.8,9.8,12,10.6,11.1,10.6z M7.8,28.9c0,1.8,1.5,3.3,3.3,3.3h2.4L7.8,18.3V28.9z"/>
+                </svg>
+
                 <p class="feature_text"> The new picture in picture video mode means you can watch goals, manager interviews and more whilst using other areas of the app – so you don’t need to miss any of the action</p>
             </li>
             <li class="feature_item">
-                <img class="feature_img" src="./img/icons/feat_6.svg" alt="sdsdsd"/>
+                <svg class="feature_img" version="1.1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;">
+                <path class="st0" d="M26.7,0H3.3C1.5,0,0,1.5,0,3.3v23.3C0,28.5,1.5,30,3.3,30h23.3c1.8,0,3.3-1.5,3.3-3.3V3.3C30,1.5,28.5,0,26.7,0
+                    z M10,23.3H6.7V11.7H10V23.3z M16.7,23.3h-3.3V6.7h3.3V23.3z M23.3,23.3H20v-6.7h3.3V23.3z"/>
+                </svg>
+
                 <p class="feature_text"> Live updated league tables including all the domestic, European and major leagues and tournaments</p>
             </li>
             <li class="feature_item">
-                <img class="feature_img" src="./img/icons/feat_7.svg" alt="sdsdsd"/>
+                <svg class="feature_img" version="1.1" x="0px" y="0px" width="29px" height="38px" viewBox="0 0 29 38" style="enable-background:new 0 0 29 38;">
+                <path class="st0" d="M25,0.7l-16.7,0C6.5,0.7,5,2.2,5,4v5h3.3V7.3H25v23.3H8.3V29H5v5c0,1.8,1.5,3.3,3.3,3.3H25
+                    c1.8,0,3.3-1.5,3.3-3.3V4C28.3,2.2,26.8,0.7,25,0.7z M11.7,24H15V12.3H3.3v3.3h6L0,25l2.3,2.4l9.3-9.3V24z"/>
+                </svg>
+
                 <p class="feature_text"> The Guardian News Vidiprinter. Follow the goals as they go in with our new and improved Vidiprinter</p>
             </li>
             <li class="feature_item">
-                <img class="feature_img" src="./img/icons/feat_8.svg" alt="sdsdsd"/>
+                <svg class="feature_img" version="1.1" x="0px" y="0px" width="38px" height="24px" viewBox="0 0 38 24" style="enable-background:new 0 0 38 24;">
+                <path class="st0" d="M25.7,10.3c2.8,0,5-2.2,5-5c0-2.8-2.2-5-5-5s-5,2.2-5,5C20.7,8.1,22.9,10.3,25.7,10.3z M12.3,10.3
+                    c2.8,0,5-2.2,5-5c0-2.8-2.2-5-5-5c-2.8,0-5,2.2-5,5C7.3,8.1,9.6,10.3,12.3,10.3z M12.3,13.7c-3.9,0-11.7,1.9-11.7,5.8v4.2H24v-4.2
+                    C24,15.6,16.2,13.7,12.3,13.7z M25.7,13.7c-0.5,0-1,0-1.6,0.1c1.9,1.4,3.3,3.3,3.3,5.8v4.2h10v-4.2C37.3,15.6,29.6,13.7,25.7,13.7z"
+                    />
+                </svg>
+
                 <p class="feature_text"> Match reports, previews and a dedicated news section</p>
             </li>
             <li class="feature_item">
-                <img class="feature_img" src="./img/icons/feat_9.svg" alt="sdsdsd"/>
+                <svg class="feature_img" version="1.1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;">
+                <path class="st0" d="M0,23.3v3.3h10v-3.3H0z M0,3.3v3.3h16.7V3.3H0z M16.7,30v-3.3H30v-3.3H16.7V20h-3.3v10H16.7z M6.7,10v3.3H0v3.3
+                    h6.7V20H10V10H6.7z M30,16.7v-3.3H13.3v3.3H30z M20,10h3.3V6.7H30V3.3h-6.7V0H20V10z"/>
+                </svg>
+
                 <p class="feature_text"> And you can achieve super-fan status by personalising your home page with up-to-the-minute information on your team.</p>
             </li>
         </ul>    
@@ -149,10 +192,12 @@
 </section>
 
 
+
+
 <!-- Feedbacks -->
-<div class="feedbacks">
+<section class="feedbacks">
     <h2 class="experience_title">What Our Users Say</h2>
-    <div class="feedbacks_list">
+    <div class="feedbacks_slider">
         <div class="controls">
             <div class="controls_prev">
                 <div class="arrow_prev"></div>
@@ -161,77 +206,79 @@
                 <div class="arrow_next"></div>
             </div>
         </div>
-
-        <div class="feedbacks_item">
-            <div class="feedbacks_info">
-                <div class="feedbacks_img">
-                    <img src="./img/slider/prof_1.jpg" alt="">
+        <div class="feedbacks_list">
+            <div class="feedbacks_item">
+                <div class="feedbacks_info">
+                    <div class="feedbacks_img">
+                        <img src="./img/slider/prof_1.jpg" alt="">
+                    </div>
+                    <span class="feedbacks_name">Sarah Udoma</span>
+                    <div class="feedbacks_social">
+                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+                            <path d="M15.3144 1.42111C14.7684 1.65702 14.1808 1.81561 13.5645 1.88753C14.1942 1.52109 14.677 0.942173 14.9043 0.250834C14.3153 0.590668 13.6637 0.83679 12.9692 0.968776C12.4137 0.394577 11.6223 0.0359497 10.7457 0.0359497C9.0645 0.0359497 7.70045 1.35864 7.70045 2.99139C7.70045 3.22344 7.72705 3.44922 7.77931 3.66565C5.24807 3.54224 3.00276 2.36484 1.50123 0.576594C1.23872 1.01331 1.08871 1.52032 1.08871 2.06251C1.08871 3.0875 1.62618 3.99372 2.44341 4.5227C1.94344 4.50708 1.47463 4.37501 1.06296 4.1524V4.1899C1.06296 5.62269 2.11293 6.81726 3.50668 7.08913C3.2512 7.15632 2.98242 7.19305 2.70429 7.19305C2.5082 7.19305 2.3176 7.17512 2.13164 7.13993C2.5191 8.31493 3.64416 9.16958 4.97775 9.19309C3.93482 9.98681 2.62148 10.4587 1.19418 10.4587C0.948056 10.4587 0.705882 10.4446 0.466797 10.4174C1.81601 11.2564 3.41606 11.7462 5.13711 11.7462C10.7402 11.7462 13.8043 7.23999 13.8043 3.33371L13.7957 2.95088C14.3894 2.53519 14.9059 2.01488 15.3144 1.42111Z" fill="#00ADEE"/>
+                            </svg>                        
+                    </div>
                 </div>
-                <span class="feedbacks_name">Sarah Udoma</span>
-                <div class="feedbacks_social">
-                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
-                        <path d="M15.3144 1.42111C14.7684 1.65702 14.1808 1.81561 13.5645 1.88753C14.1942 1.52109 14.677 0.942173 14.9043 0.250834C14.3153 0.590668 13.6637 0.83679 12.9692 0.968776C12.4137 0.394577 11.6223 0.0359497 10.7457 0.0359497C9.0645 0.0359497 7.70045 1.35864 7.70045 2.99139C7.70045 3.22344 7.72705 3.44922 7.77931 3.66565C5.24807 3.54224 3.00276 2.36484 1.50123 0.576594C1.23872 1.01331 1.08871 1.52032 1.08871 2.06251C1.08871 3.0875 1.62618 3.99372 2.44341 4.5227C1.94344 4.50708 1.47463 4.37501 1.06296 4.1524V4.1899C1.06296 5.62269 2.11293 6.81726 3.50668 7.08913C3.2512 7.15632 2.98242 7.19305 2.70429 7.19305C2.5082 7.19305 2.3176 7.17512 2.13164 7.13993C2.5191 8.31493 3.64416 9.16958 4.97775 9.19309C3.93482 9.98681 2.62148 10.4587 1.19418 10.4587C0.948056 10.4587 0.705882 10.4446 0.466797 10.4174C1.81601 11.2564 3.41606 11.7462 5.13711 11.7462C10.7402 11.7462 13.8043 7.23999 13.8043 3.33371L13.7957 2.95088C14.3894 2.53519 14.9059 2.01488 15.3144 1.42111Z" fill="#00ADEE"/>
-                        </svg>                        
-                </div>
+               <p class="feedbacks_text">I use this app every day and it's a great way to keep up to date with what's going on in football. </p>
             </div>
-           <p class="feedbacks_text">I use this app every day and it's a great way to keep up to date with what's going on in football. </p>
-        </div>
-        <div class="feedbacks_item">
-            <div class="feedbacks_info">
-                <div class="feedbacks_img">
-                    <img src="./img/slider/prof_2.jpg" alt="">
+            <div class="feedbacks_item">
+                <div class="feedbacks_info">
+                    <div class="feedbacks_img">
+                        <img src="./img/slider/prof_2.jpg" alt="">
+                    </div>
+                    <span class="feedbacks_name">Noah Jackson</span>
+                    <div class="feedbacks_social">
+                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+                            <path d="M15.3144 1.42111C14.7684 1.65702 14.1808 1.81561 13.5645 1.88753C14.1942 1.52109 14.677 0.942173 14.9043 0.250834C14.3153 0.590668 13.6637 0.83679 12.9692 0.968776C12.4137 0.394577 11.6223 0.0359497 10.7457 0.0359497C9.0645 0.0359497 7.70045 1.35864 7.70045 2.99139C7.70045 3.22344 7.72705 3.44922 7.77931 3.66565C5.24807 3.54224 3.00276 2.36484 1.50123 0.576594C1.23872 1.01331 1.08871 1.52032 1.08871 2.06251C1.08871 3.0875 1.62618 3.99372 2.44341 4.5227C1.94344 4.50708 1.47463 4.37501 1.06296 4.1524V4.1899C1.06296 5.62269 2.11293 6.81726 3.50668 7.08913C3.2512 7.15632 2.98242 7.19305 2.70429 7.19305C2.5082 7.19305 2.3176 7.17512 2.13164 7.13993C2.5191 8.31493 3.64416 9.16958 4.97775 9.19309C3.93482 9.98681 2.62148 10.4587 1.19418 10.4587C0.948056 10.4587 0.705882 10.4446 0.466797 10.4174C1.81601 11.2564 3.41606 11.7462 5.13711 11.7462C10.7402 11.7462 13.8043 7.23999 13.8043 3.33371L13.7957 2.95088C14.3894 2.53519 14.9059 2.01488 15.3144 1.42111Z" fill="#00ADEE"/>
+                            </svg>                        
+                    </div>
                 </div>
-                <span class="feedbacks_name">Noah Jackson</span>
-                <div class="feedbacks_social">
-                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
-                        <path d="M15.3144 1.42111C14.7684 1.65702 14.1808 1.81561 13.5645 1.88753C14.1942 1.52109 14.677 0.942173 14.9043 0.250834C14.3153 0.590668 13.6637 0.83679 12.9692 0.968776C12.4137 0.394577 11.6223 0.0359497 10.7457 0.0359497C9.0645 0.0359497 7.70045 1.35864 7.70045 2.99139C7.70045 3.22344 7.72705 3.44922 7.77931 3.66565C5.24807 3.54224 3.00276 2.36484 1.50123 0.576594C1.23872 1.01331 1.08871 1.52032 1.08871 2.06251C1.08871 3.0875 1.62618 3.99372 2.44341 4.5227C1.94344 4.50708 1.47463 4.37501 1.06296 4.1524V4.1899C1.06296 5.62269 2.11293 6.81726 3.50668 7.08913C3.2512 7.15632 2.98242 7.19305 2.70429 7.19305C2.5082 7.19305 2.3176 7.17512 2.13164 7.13993C2.5191 8.31493 3.64416 9.16958 4.97775 9.19309C3.93482 9.98681 2.62148 10.4587 1.19418 10.4587C0.948056 10.4587 0.705882 10.4446 0.466797 10.4174C1.81601 11.2564 3.41606 11.7462 5.13711 11.7462C10.7402 11.7462 13.8043 7.23999 13.8043 3.33371L13.7957 2.95088C14.3894 2.53519 14.9059 2.01488 15.3144 1.42111Z" fill="#00ADEE"/>
-                        </svg>                        
-                </div>
+               <p class="feedbacks_text">I use this app every day and it's a great way to keep up to date with what's going on in football. It's a shame it won't rotate into landscape mode like its main competitor </p>
             </div>
-           <p class="feedbacks_text">I use this app every day and it's a great way to keep up to date with what's going on in football. It's a shame it won't rotate into landscape mode like its main competitor </p>
-        </div>
-        <div class="feedbacks_item">
-            <div class="feedbacks_info">
-                <div class="feedbacks_img">
-                    <img src="./img/slider/prof_default.png" alt="">
+            <div class="feedbacks_item">
+                <div class="feedbacks_info">
+                    <div class="feedbacks_img">
+                        <img src="./img/slider/prof_default.png" alt="">
+                    </div>
+                    <span class="feedbacks_name">Darren Wilson</span>
+                    <div class="feedbacks_social">
+                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+                            <path d="M15.3144 1.42111C14.7684 1.65702 14.1808 1.81561 13.5645 1.88753C14.1942 1.52109 14.677 0.942173 14.9043 0.250834C14.3153 0.590668 13.6637 0.83679 12.9692 0.968776C12.4137 0.394577 11.6223 0.0359497 10.7457 0.0359497C9.0645 0.0359497 7.70045 1.35864 7.70045 2.99139C7.70045 3.22344 7.72705 3.44922 7.77931 3.66565C5.24807 3.54224 3.00276 2.36484 1.50123 0.576594C1.23872 1.01331 1.08871 1.52032 1.08871 2.06251C1.08871 3.0875 1.62618 3.99372 2.44341 4.5227C1.94344 4.50708 1.47463 4.37501 1.06296 4.1524V4.1899C1.06296 5.62269 2.11293 6.81726 3.50668 7.08913C3.2512 7.15632 2.98242 7.19305 2.70429 7.19305C2.5082 7.19305 2.3176 7.17512 2.13164 7.13993C2.5191 8.31493 3.64416 9.16958 4.97775 9.19309C3.93482 9.98681 2.62148 10.4587 1.19418 10.4587C0.948056 10.4587 0.705882 10.4446 0.466797 10.4174C1.81601 11.2564 3.41606 11.7462 5.13711 11.7462C10.7402 11.7462 13.8043 7.23999 13.8043 3.33371L13.7957 2.95088C14.3894 2.53519 14.9059 2.01488 15.3144 1.42111Z" fill="#00ADEE"/>
+                            </svg>                        
+                    </div>
                 </div>
-                <span class="feedbacks_name">Darren Wilson</span>
-                <div class="feedbacks_social">
-                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
-                        <path d="M15.3144 1.42111C14.7684 1.65702 14.1808 1.81561 13.5645 1.88753C14.1942 1.52109 14.677 0.942173 14.9043 0.250834C14.3153 0.590668 13.6637 0.83679 12.9692 0.968776C12.4137 0.394577 11.6223 0.0359497 10.7457 0.0359497C9.0645 0.0359497 7.70045 1.35864 7.70045 2.99139C7.70045 3.22344 7.72705 3.44922 7.77931 3.66565C5.24807 3.54224 3.00276 2.36484 1.50123 0.576594C1.23872 1.01331 1.08871 1.52032 1.08871 2.06251C1.08871 3.0875 1.62618 3.99372 2.44341 4.5227C1.94344 4.50708 1.47463 4.37501 1.06296 4.1524V4.1899C1.06296 5.62269 2.11293 6.81726 3.50668 7.08913C3.2512 7.15632 2.98242 7.19305 2.70429 7.19305C2.5082 7.19305 2.3176 7.17512 2.13164 7.13993C2.5191 8.31493 3.64416 9.16958 4.97775 9.19309C3.93482 9.98681 2.62148 10.4587 1.19418 10.4587C0.948056 10.4587 0.705882 10.4446 0.466797 10.4174C1.81601 11.2564 3.41606 11.7462 5.13711 11.7462C10.7402 11.7462 13.8043 7.23999 13.8043 3.33371L13.7957 2.95088C14.3894 2.53519 14.9059 2.01488 15.3144 1.42111Z" fill="#00ADEE"/>
-                        </svg>                        
-                </div>
+               <p class="feedbacks_text">Good for scores and commentary but the team lineups have stopped working. </p>
             </div>
-           <p class="feedbacks_text">Good for scores and commentary but the team lineups have stopped working. </p>
-        </div>
-        <div class="feedbacks_item">
-            <div class="feedbacks_info">
-                <div class="feedbacks_img">
-                    <img src="./img/slider/prof_4.jpg" alt="">
+            <div class="feedbacks_item">
+                <div class="feedbacks_info">
+                    <div class="feedbacks_img">
+                        <img src="./img/slider/prof_4.jpg" alt="">
+                    </div>
+                    <span class="feedbacks_name">Michael Akinuli</span>
+                    <div class="feedbacks_social">
+                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+                            <path d="M15.3144 1.42111C14.7684 1.65702 14.1808 1.81561 13.5645 1.88753C14.1942 1.52109 14.677 0.942173 14.9043 0.250834C14.3153 0.590668 13.6637 0.83679 12.9692 0.968776C12.4137 0.394577 11.6223 0.0359497 10.7457 0.0359497C9.0645 0.0359497 7.70045 1.35864 7.70045 2.99139C7.70045 3.22344 7.72705 3.44922 7.77931 3.66565C5.24807 3.54224 3.00276 2.36484 1.50123 0.576594C1.23872 1.01331 1.08871 1.52032 1.08871 2.06251C1.08871 3.0875 1.62618 3.99372 2.44341 4.5227C1.94344 4.50708 1.47463 4.37501 1.06296 4.1524V4.1899C1.06296 5.62269 2.11293 6.81726 3.50668 7.08913C3.2512 7.15632 2.98242 7.19305 2.70429 7.19305C2.5082 7.19305 2.3176 7.17512 2.13164 7.13993C2.5191 8.31493 3.64416 9.16958 4.97775 9.19309C3.93482 9.98681 2.62148 10.4587 1.19418 10.4587C0.948056 10.4587 0.705882 10.4446 0.466797 10.4174C1.81601 11.2564 3.41606 11.7462 5.13711 11.7462C10.7402 11.7462 13.8043 7.23999 13.8043 3.33371L13.7957 2.95088C14.3894 2.53519 14.9059 2.01488 15.3144 1.42111Z" fill="#00ADEE"/>
+                            </svg>                        
+                    </div>
                 </div>
-                <span class="feedbacks_name">Michael Akinuli</span>
-                <div class="feedbacks_social">
-                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
-                        <path d="M15.3144 1.42111C14.7684 1.65702 14.1808 1.81561 13.5645 1.88753C14.1942 1.52109 14.677 0.942173 14.9043 0.250834C14.3153 0.590668 13.6637 0.83679 12.9692 0.968776C12.4137 0.394577 11.6223 0.0359497 10.7457 0.0359497C9.0645 0.0359497 7.70045 1.35864 7.70045 2.99139C7.70045 3.22344 7.72705 3.44922 7.77931 3.66565C5.24807 3.54224 3.00276 2.36484 1.50123 0.576594C1.23872 1.01331 1.08871 1.52032 1.08871 2.06251C1.08871 3.0875 1.62618 3.99372 2.44341 4.5227C1.94344 4.50708 1.47463 4.37501 1.06296 4.1524V4.1899C1.06296 5.62269 2.11293 6.81726 3.50668 7.08913C3.2512 7.15632 2.98242 7.19305 2.70429 7.19305C2.5082 7.19305 2.3176 7.17512 2.13164 7.13993C2.5191 8.31493 3.64416 9.16958 4.97775 9.19309C3.93482 9.98681 2.62148 10.4587 1.19418 10.4587C0.948056 10.4587 0.705882 10.4446 0.466797 10.4174C1.81601 11.2564 3.41606 11.7462 5.13711 11.7462C10.7402 11.7462 13.8043 7.23999 13.8043 3.33371L13.7957 2.95088C14.3894 2.53519 14.9059 2.01488 15.3144 1.42111Z" fill="#00ADEE"/>
-                        </svg>                        
-                </div>
+               <p class="feedbacks_text">Good for watching the goals and great for highlights instead of waiting till 10:30 before you can watch highlights on March of the day also no need of sky go </p>
             </div>
-           <p class="feedbacks_text">Good for watching the goals and great for highlights instead of waiting till 10:30 before you can watch highlights on March of the day also no need of sky go </p>
-        </div>
-        <div class="feedbacks_item">
-            <div class="feedbacks_info">
-                <div class="feedbacks_img">
-                    <img src="./img/slider/prof_1.jpg" alt="">
+            <div class="feedbacks_item">
+                <div class="feedbacks_info">
+                    <div class="feedbacks_img">
+                        <img src="./img/slider/prof_1.jpg" alt="">
+                    </div>
+                    <span class="feedbacks_name">Sarah Udoma</span>
+                    <div class="feedbacks_social">
+                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+                            <path d="M15.3144 1.42111C14.7684 1.65702 14.1808 1.81561 13.5645 1.88753C14.1942 1.52109 14.677 0.942173 14.9043 0.250834C14.3153 0.590668 13.6637 0.83679 12.9692 0.968776C12.4137 0.394577 11.6223 0.0359497 10.7457 0.0359497C9.0645 0.0359497 7.70045 1.35864 7.70045 2.99139C7.70045 3.22344 7.72705 3.44922 7.77931 3.66565C5.24807 3.54224 3.00276 2.36484 1.50123 0.576594C1.23872 1.01331 1.08871 1.52032 1.08871 2.06251C1.08871 3.0875 1.62618 3.99372 2.44341 4.5227C1.94344 4.50708 1.47463 4.37501 1.06296 4.1524V4.1899C1.06296 5.62269 2.11293 6.81726 3.50668 7.08913C3.2512 7.15632 2.98242 7.19305 2.70429 7.19305C2.5082 7.19305 2.3176 7.17512 2.13164 7.13993C2.5191 8.31493 3.64416 9.16958 4.97775 9.19309C3.93482 9.98681 2.62148 10.4587 1.19418 10.4587C0.948056 10.4587 0.705882 10.4446 0.466797 10.4174C1.81601 11.2564 3.41606 11.7462 5.13711 11.7462C10.7402 11.7462 13.8043 7.23999 13.8043 3.33371L13.7957 2.95088C14.3894 2.53519 14.9059 2.01488 15.3144 1.42111Z" fill="#00ADEE"/>
+                            </svg>                        
+                    </div>
                 </div>
-                <span class="feedbacks_name">Sarah Udoma</span>
-                <div class="feedbacks_social">
-                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
-                        <path d="M15.3144 1.42111C14.7684 1.65702 14.1808 1.81561 13.5645 1.88753C14.1942 1.52109 14.677 0.942173 14.9043 0.250834C14.3153 0.590668 13.6637 0.83679 12.9692 0.968776C12.4137 0.394577 11.6223 0.0359497 10.7457 0.0359497C9.0645 0.0359497 7.70045 1.35864 7.70045 2.99139C7.70045 3.22344 7.72705 3.44922 7.77931 3.66565C5.24807 3.54224 3.00276 2.36484 1.50123 0.576594C1.23872 1.01331 1.08871 1.52032 1.08871 2.06251C1.08871 3.0875 1.62618 3.99372 2.44341 4.5227C1.94344 4.50708 1.47463 4.37501 1.06296 4.1524V4.1899C1.06296 5.62269 2.11293 6.81726 3.50668 7.08913C3.2512 7.15632 2.98242 7.19305 2.70429 7.19305C2.5082 7.19305 2.3176 7.17512 2.13164 7.13993C2.5191 8.31493 3.64416 9.16958 4.97775 9.19309C3.93482 9.98681 2.62148 10.4587 1.19418 10.4587C0.948056 10.4587 0.705882 10.4446 0.466797 10.4174C1.81601 11.2564 3.41606 11.7462 5.13711 11.7462C10.7402 11.7462 13.8043 7.23999 13.8043 3.33371L13.7957 2.95088C14.3894 2.53519 14.9059 2.01488 15.3144 1.42111Z" fill="#00ADEE"/>
-                        </svg>                        
-                </div>
+               <p class="feedbacks_text">This app has videos for other premier league teams who play and it also gives me nofications when my favourite team plays </p>
             </div>
-           <p class="feedbacks_text">This app has videos for other premier league teams who play and it also gives me nofications when my favourite team plays </p>
         </div>
+        
 
     </div>
    
@@ -244,57 +291,70 @@
         <span class="counter_item"></span>
         <span class="counter_item"></span>
     </div>
-</div>
+</section>
+
+
+
+
+
 
 <!-- Partners -->
-<footer class="partners">
+<section class="partners">
     <div class="container">
         <h2 class="experience_title">We have been featured in</h2>
         <div class="partners_wrapper">
             <div class="partners_logo">
-                <img src="./img/logo/sports_tv.svg" alt="footer logo">
+                <img src="./img/logo/sports_tv.svg" alt="sports_tv logo">
             </div>
             <div class="partners_logo">
-                <img src="./img/logo/sports.svg" alt="footer logo">
+                <img src="./img/logo/sports.svg" alt="sports logo">
             </div>
             <div class="partners_logo">
-                <img src="./img/logo/nbc_sports.svg" alt="footer logo">
+                <img src="./img/logo/nbc_sports.svg" alt="nbc_sports logo">
             </div>
             <div class="partners_logo">
-                <img src="./img/logo/designer_tech.svg" alt="footer logo">
+                <img src="./img/logo/designer_tech.svg" alt="designer_tech logo">
             </div>
             <div class="partners_logo">
-                <img src="./img/logo/designer_news.svg" alt="footer logo">
+                <img src="./img/logo/designer_news.svg" alt="designer news logo">
             </div>
             <div class="partners_logo">
-                <img src="./img/logo/sky_sports.svg" alt="footer logo">
+                <img src="./img/logo/sky_sports.svg" alt="sky sports logo">
             </div>
-            
         </div> <!-- </.partners_wrapper -->
     </div> <!-- </.container -->
-</footer>
+</section>
+
+
 
 
 <!-- Get up close -->
 <section class="contact">
     <div class="container">
-        <div class="contact_wrapper">
-            <div class="contact_content">
-                <h2 class="experience_title">Get Up Close With Your Team</h2>
-                <p class="experience_text">If you’re interested in the scores of more than one team (it’s OK, we won’t tell your mates you support two clubs!), you can choose the scores and competitions that matter to you using the ‘My Scores’ section. So, make sure you’re a top-flight football fan by downloading the Football Score Centre now. It’s got all this:</p>
-                <div class="buttons_wrapper">
-                    <a href="" class="button button_apple">
-                        <img src="./img/apple_store.svg" alt="">
-                    </a>
-                    <a href="" class="button button_google">
-                        <img src="./img/google_play.svg" alt="">
-                    </a>
-                </div>
+        <div class="contact_content">
+            <h2 class="experience_title">Get Up Close With Your Team</h2>
+            <p class="experience_text">If you’re interested in the scores of more than one team (it’s OK, we won’t tell your mates you support two clubs!), you can choose the scores and competitions that matter to you using the ‘My Scores’ section. So, make sure you’re a top-flight football fan by downloading the Football Score Centre now. It’s got all this:</p>
+            <div class="buttons_wrapper">
+                <a href="" class="button button_apple">
+                    <img src="./img/apple_store.svg" alt="">
+                </a>
+                <a href="" class="button button_google">
+                    <img src="./img/google_play.svg" alt="">
+                </a>
             </div>
         </div>
+        
     </div>
+    <div class="contact_img"></div>
 </section>
 
+
+
+
+
+
+
+<!-- Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer_wrapper">
@@ -353,6 +413,9 @@
         </div>
     </div>
 </footer>
+
+
+
 
 </body>
 </html>
