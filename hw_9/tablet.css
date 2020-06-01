@@ -49,17 +49,32 @@
     .interface {
         min-height: 400px;
     }
-    .interface {
-        background-image: url('./img/optimized/interface_bg_1058.png');
-        background-size: 90% auto;
-        background-position: center right;
-    }
+  
     .interface_wrapper {
         padding-right: 25px;
         padding-left: 15px;
         max-width: 45%;
         align-items: flex-start;
         text-align: left;
+    }
+    .interface_img {
+
+        background-image: url('./img/optimized/circle_bg.png');
+        max-width: 1440px;
+    
+        left: 49%;
+
+        width: 100%;
+        min-height: 400px;
+
+        background-size: auto 500px;
+
+    }
+    .interface_example {
+        left: 59%;
+    }
+    .interface_iphone {
+        height: 450px;
     }
     .features {
         background: url('./img/optimized/features_bg.png');
