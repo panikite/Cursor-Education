@@ -18,10 +18,15 @@
     .experience {
         min-height: 400px;
         padding-bottom: 10px;
-        background-image: linear-gradient(to left,rgb(255,255,255,1) 60%, rgb(255, 255, 255,0.3) 90%), url('./img/optimized/experience_bg_1106.png') ;
     }
    .experience_wrap {
        flex-direction: row;
+   }
+   .experience_images {
+       flex-basis: 60%;
+   }
+   .experience_content {
+       flex-basis: 40%;
    }
     .experience_content {
         padding-right: 0;
@@ -30,17 +35,17 @@
         align-items: flex-start;
         text-align: left;
     }
+    .experience_block1 {
+        max-width: 340px;
+    }
     .experience_images {
         order:0;
         max-width: 50%;
     }
     .experience_img1 {
-        max-width: 250px;
-        left: 19%;
+        max-width: 340px;
     }
-    .experience_img2 {
-        max-width: 300px;
-    }
+
     .interface {
         min-height: 400px;
     }

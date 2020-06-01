@@ -35,17 +35,31 @@
         flex-basis: 100%;
     
     }
-    .experience_img1{
-        position: absolute;
-        max-width: 90%;
-        top: 31%;
-        left: 30%;
+    .experience_block1 {
+        left: -25px;
     }
-    .experience_img2{
-        position: absolute;
-        
-        top: -15px;
-        left: -35%;
+   
+    .block_time {
+        font-size: 1.05rem;
+        line-height: 135%;
+    }
+    .block1_fc {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .block1_match {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .block1_notification {
+        font-size: 18.8812px;
+        line-height: 25px;
+    }
+    
+    
+    .experience_img1{
+        max-width: 360px;
+        top: -40%;
     }
     .experience_content {
         max-width: 80%; 
@@ -56,8 +70,7 @@
         align-items: center;
     }
 
-    
-
+   
     .interface {
         width: 100%;
         min-height: 716px;
