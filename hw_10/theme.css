@@ -1,12 +1,12 @@
 .badge {
-    position: relative;
+    position: absolute;
 }
 .badge-pill {
     padding-right: 2px;
     padding-left: 2px;
   
-    left: -10px;
-    bottom: 2px;
+    left: 22px;
+    bottom: 18px;
     
     vertical-align: text-top;
     width: 18px;
@@ -109,7 +109,7 @@ a:active > span {
 
 
 }
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:576px) and (max-width:768px){
 
 .form-control {
     width: 100px;
