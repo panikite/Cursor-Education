@@ -12,18 +12,6 @@ window.addEventListener('DOMContentLoaded', function() {
        l3.classList.toggle('l3_active');
     });
    
-
-    let list = document.getElementById("pendulum");
-    let items = list.getElementsByTagName("li");
-
-    for (let i = 0; i < items.length; i++) {
-        let position = i.style.backgroundPosition;
-        position += 35+"px"; 
-        console.log(i);
-    }
-
-
-
 });
 
 
