@@ -13,6 +13,17 @@ window.addEventListener('DOMContentLoaded', function() {
     });
    
 
+    let list = document.getElementById("pendulum");
+    let items = list.getElementsByTagName("li");
+
+    for (let i = 0; i < items.length; i++) {
+        let position = i.style.backgroundPosition;
+        position += 35+"px"; 
+        console.log(i);
+    }
+
+
+
 });
 
 
