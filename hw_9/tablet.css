@@ -49,7 +49,38 @@
     .interface {
         min-height: 400px;
     }
-  
+    .container--bg {
+        background-size: 110% auto;
+        background-position: center, center -50px;
+    }
+    .interface_contwrap {
+        justify-content: flex-start;
+        flex-basis: 75%;
+    }
+    .interface_img {
+        width: 100%;
+        min-height: 716px;
+        height: 100%;
+        z-index: 10;
+       
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .interface_example {
+        margin-right: auto;
+        margin-left: 10%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .interface_ex_wrapper {
+        width: 65%;
+    }
+    .iphone_wrap {
+        position: relative;
+    }
     .interface_wrapper {
         padding-right: 25px;
         padding-left: 15px;
@@ -57,25 +88,27 @@
         align-items: flex-start;
         text-align: left;
     }
+    .interface_content {
+        width: 85%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
     .interface_img {
-
-        background-image: url('./img/optimized/circle_bg.png');
-        max-width: 1440px;
-    
-        left: 49%;
-
-        width: 100%;
-        min-height: 400px;
-
-        background-size: auto 500px;
-
+        min-height: 500px;
     }
-    .interface_example {
-        left: 59%;
-    }
+
     .interface_iphone {
-        height: 450px;
+        height: 400px;
     }
+    .interface_circle {
+        width: 71px;
+        height: 71px;
+    }
+    .interface_circle.phone {
+        left: 113%;
+    }
+
+
     .features {
         background: url('./img/optimized/features_bg.png');
         background-repeat: no-repeat;

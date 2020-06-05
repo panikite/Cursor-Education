@@ -73,40 +73,45 @@
    
     .interface {
         width: 100%;
-    }
-    .interface {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .interface_wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        padding-top: 60px;
-        padding-bottom: 30px;
+    .interface > .container {
+        padding-left: 0;
         padding-right: 0;
-        text-align: center;
-        margin: auto;
-        
     }
-    .interface_img {
-        position: relative;
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
+   .container--bg {
+       background-image: none;
+   }
+   .interface_inner {
+    flex-direction: column;
+   }
+   .interface_contwrap {
+       padding-bottom: 40px;
+   }
+   .interface_content {
+       text-align: center;
+       width: 75%;
+       padding-top: 60px;
+       padding-bottom: 0;
+   }
+    .interface_ex_wrapper {
         width: 100%;
-       
-        background-size: auto 530px;
-        background-position: 122% 67px;
     }
     .interface_example {
-        left:0;
-        margin-left: auto;
-        margin-right: auto;
+        margin-right: 5%;
+        margin-left: 0;
+        justify-content: center;
+    }
+   
+    .interface_img {
+        min-height: 560px;
+
+        background-image: url('./img/optimized/circle_bg.png');
+        background-position: center right -20px;
+        background-size: auto 600px;
+        background-repeat: no-repeat;
     }
     .interface_circle {
         width: 71px;
@@ -116,15 +121,15 @@
         left: 9%;
     }
     .interface_circle.blue {
-        top: 77%;
+        display: none;
     }
     .interface_circle.phone {
         display: none;
     }
     .interface_circle.cart {
         visibility: visible;
-        top: 70%;
-        left: 78%;
+        top: 78%;
+        left: 77%;
     }
 
 

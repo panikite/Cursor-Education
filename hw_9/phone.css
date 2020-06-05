@@ -111,39 +111,54 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    
     }
-    .interface_wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-top: 60px;
-        padding-bottom: 20px;
-        text-align: center;
+    .interface > .container {
+        padding-left: 0;
         padding-right: 0;
     }
-    .interface_img {
-        position: relative;
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        width: 100%;
-       
-        background-size: auto 530px;
-        background-position: 88% 44px;
+    .container--bg {
+        background-image: none;
     }
-    .interface_example {
-        left:0;
-        top:-100px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:0;
-        max-width: 315px;
+    .interface_inner {
+     flex-direction: column;
     }
-    .interface_circle.nofication {
-        left: 16%;
+    .interface_contwrap {
+        padding-bottom: 40px;
+    }
+    .interface_content {
+        text-align: center;
+        width: 95%;
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+     .interface_ex_wrapper {
+         width: 100%;
+     }
+     .interface_example {
+         margin-right: 0;
+         margin-left: 5%;
+         justify-content: center;
+     }
+     .interface_iphone {
+        width: 250px;
+    }
+     .interface_img {
+        min-height: 460px;
+ 
+         background-image: url('./img/optimized/circle_bg.png');
+         background-position: center right 15%;
+         background-size: auto 500px;
+         background-repeat: no-repeat;
+     }
+
+   
+    .interface_circle {
+        width: 71px;
+        height: 71px;
+    }
+    .interface_circle.notification {
+        top: 10%;
+        left: -2%;
     }
     .interface_circle.blue {
         visibility: hidden;
@@ -153,18 +168,8 @@
     }
     .interface_circle.cart {
         visibility: visible;
-        top: 99%;
-        left: 78%;
-    }
-    .interface_example {
-        left: 0;
-        margin-right: auto;
-        margin-left: auto;
-        height: 400px;
-    }
-    .interface_circle {
-        width: 71px;
-        height: 71px;
+        top: 76%;
+        left: 62%;
     }
     .interface_iphone {
         position: relative;
