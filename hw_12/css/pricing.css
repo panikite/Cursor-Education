@@ -1,0 +1,11 @@
+.pricing {
+  padding-top: 235px;
+  padding-bottom: 175px;
+}
+.pricing::before {
+  display: block;
+  content: "";
+  width: 150%;
+  height: 50px;
+  background-color: red;
+}

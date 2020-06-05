@@ -1,0 +1,21 @@
+mixin feature(img,title,text,button="button")
+    if button == 'button'
+        section.feature
+            .container
+                .row.align-items-center
+                    .general_img-wrap.col-12.col-md-6
+                        img.general_img(src=img)
+                    .general_info.col-12.col-md-5.offset-md-1
+                        h2.feature_title= title
+                        p.feature_text= text
+    else
+        section.feature
+            .container
+                .row.align-items-center
+                    .general_img.col-12.col-md-6
+                        img(src=img)
+                    .general_info.col-12.col-md-5.offset-md-1
+                        h2.feature_title= title
+                        p.feature_text= text
+                        button.btn-fill.btn-lg= button
+                

@@ -1,0 +1,18 @@
+.general {
+  padding-top: 160px;
+  padding-bottom: 110px;
+}
+.general_features-section {
+  margin-top: 80px;
+}
+.general_icon {
+  margin-bottom: 14px;
+}
+.general_description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #5D6970;
+}

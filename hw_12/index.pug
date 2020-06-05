@@ -1,0 +1,28 @@
+extends pug/layout
+include pug/mixin
+
+block main
+    //section intro
+    section.intro
+        include pug/header
+        .container
+            .row
+                .intro_content.col-12.col-md-6
+                    h1.intro_title Introduce Your Product Quickly & Effectively
+                    p.intro_text 
+                    |   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    p.intro_text
+                    |   Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    .intro_buttons-wrap.d-flex
+                        button.btn.btn-fill.btn-lg.mr-4 Purchase UI Kit
+                        button.btn.btn_outline.btn-lg Learn More
+    include pug/general
+
+
+    - var feat_text = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.'
+    - var feat = {img1: './img/feature_1.png', img2: './img/feature_2.png', img3: './img/feature_3.png', title: 'Light, Fast & Powerful', text: feat_text}
+        
+    +feature(feat.img1, feat.title, feat.text)
+    +feature(feat.img2, feat.title, feat.text)
+    +feature(feat.img3, feat.title, feat.text, 'Purchase Now')
+    include pug/pricing

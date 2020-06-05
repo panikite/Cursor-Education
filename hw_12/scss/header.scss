@@ -1,0 +1,41 @@
+.header {
+    padding-top: 25px;
+}
+.nav {
+    &_menu {
+        display: flex;
+    }
+    &_item {
+        display: inline-block;
+    }
+    &-link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+
+        color: #505F98;
+        margin-right: 60px;
+    }
+
+    @media screen and (max-width: 992px) {
+        &_menu {
+            margin-top: 0;
+        }
+        &-link {
+            margin-right: 15px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        &_menu {
+            margin-top: 25px;
+        }
+        &-link {
+            margin-right: 25px;
+        }
+        &-link:first-child {
+            padding-left: 0;
+        }
+    }
+}

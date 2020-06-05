@@ -1,0 +1,148 @@
+
+<!--layout.pug--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pug and SCSS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+    <!--section intro-->
+    <section class="intro">
+      <header class="header">
+        <div class="container"> 
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 order-1 order-md-0 text-sm-center">
+              <div class="nav_menu"><a class="nav-link" href="">Home</a><a class="nav-link" href="">About</a><a class="nav-link" href="">Contact</a></div>
+            </div>
+            <div class="col-6 col-md-4 d-flex justify-content-md-center justify-content-sm-start">
+              <div class="nav-brand"><img src="./img/Landie.svg" alt="logo"></div>
+            </div>
+            <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
+              <button class="btn btn-fill btn-lg">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="intro_content col-12 col-md-6">
+            <h1 class="intro_title">Introduce Your Product Quickly & Effectively</h1>
+            <p class="intro_text"> </p>  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            <p class="intro_text"></p>  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            <div class="intro_buttons-wrap d-flex">
+              <button class="btn btn-fill btn-lg mr-4">Purchase UI Kit</button>
+              <button class="btn btn_outline btn-lg">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="general">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="general_info col-12 col-md-6">
+            <h2 class="general_title">Light, Fast & Powerful</h2>
+            <p class="general_text"></p>
+            <Lorem>ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</Lorem>
+            <p class="general_text"></p>
+            <Donec>quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</Donec>
+            <div class="row general_features-section">
+              <div class="general_feature col-6 col-md-6"><img class="general_icon" src="./img/icons/general_icon.svg" alt="general_feature">
+                <h3 class="general_subtitle">Title Goes Here</h3>
+                <p class="general_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+              </div>
+              <div class="general_feature col-6 col-md-6"><img class="general_icon" src="./img/icons/general_icon.svg" alt="general_feature">
+                <h3 class="general_subtitle">Title Goes Here</h3>
+                <p class="general_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+              </div>
+            </div>
+          </div>
+          <div class="general_img-wrap col-12 col-md-6"><img class="general_img" src="./img/general_bg.png" alt="general illustration"></div>
+        </div>
+      </div>
+    </section>
+    <section class="feature">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="general_img-wrap col-12 col-md-6"><img class="general_img" src="./img/feature_1.png"/></div>
+          <div class="general_info col-12 col-md-5 offset-md-1">
+            <h2 class="feature_title">Light, Fast &amp; Powerful</h2>
+            <p class="feature_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feature">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="general_img-wrap col-12 col-md-6"><img class="general_img" src="./img/feature_2.png"/></div>
+          <div class="general_info col-12 col-md-5 offset-md-1">
+            <h2 class="feature_title">Light, Fast &amp; Powerful</h2>
+            <p class="feature_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feature">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="general_img col-12 col-md-6"><img src="./img/feature_3.png"/></div>
+          <div class="general_info col-12 col-md-5 offset-md-1">
+            <h2 class="feature_title">Light, Fast &amp; Powerful</h2>
+            <p class="feature_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+            <button class="btn-fill btn-lg">Purchase Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="pricing_content col-12 col-md-6">
+            <h2 class="pricing_title">A Price To Suit Everyone</h2>
+            <p class="pricing_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
+            <div class="pricing_info"><span class="pricing_price">$40</span>
+              <p class="pricing_item">UI Design Kit</p>
+            </div>
+            <div class="pricing_cta">
+              <div class="pricing_details">See, One price. Simple.</div>
+              <div class="btn btn-fill btn-lg">Purchase Now</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer page-footer">
+      <div class="container">
+        <div class="row border-bottom footer_copyright-section">
+          <div class="col-12 order-1 col-sm-4 order-sm-0 text-center text-sm-left"><span class="footer_copyright">©2020 Yourcompany</span></div>
+          <div class="col-6 col-sm-4 d-flex justify-content-center"><a><img src="./img/Landie.svg" alt="footer logo"></a></div>
+          <div class="col-6 col-sm-4 d-flex justify-content-end">
+            <button class="btn btn-fill btn-sm ml-auto">Purshase Now</button>
+          </div>
+        </div>
+        <div class="row justify-content-between alignitems-center footer_nav-section">
+          <div class="col-12 col-sm-6">
+            <ul class="footer_nav">
+              <li class="footer_nav-item"><a class="footer_link" href="">Home</a></li>
+              <li class="footer_nav-item"><a class="footer_link" href="">About</a></li>
+              <li class="footer_nav-item"><a class="footer_link" href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 justify-content-sm-end footer_social">
+            <ul class="footer_nav">
+              <li class="footer_nav-item"><a class="footer_link--social" href=""><img src="./img/icons/facebook.svg" alt="social icon"></a></li>
+              <li class="footer_nav-item"><a class="footer_link--social" href=""><img src="./img/icons/linkedin.svg" alt="social icon"></a></li>
+              <li class="footer_nav-item"><a class="footer_link--social" href=""><img src="./img/icons/twitter.svg" alt="social icon"></a></li>
+              <li class="footer_nav-item"><a class="footer_link--social" href=""><img src="./img/icons/youtube.svg" alt="social icon"></a></li>
+              <li class="footer_nav-item"><a class="footer_link--social" href=""><img src="./img/icons/instagram.svg" alt="social icon"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
