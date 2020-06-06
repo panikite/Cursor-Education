@@ -357,8 +357,8 @@ p {
   min-height: 100vh;
 }
 .intro_content {
-  padding-top: 260px;
-  padding-bottom: 400px;
+  padding-top: 20%;
+  padding-bottom: 25%;
 }
 .intro_title {
   margin-bottom: 20px;
@@ -374,10 +374,10 @@ p {
     background-size: 50% auto;
     background-position: top right;
   }
-}
-.intro_content {
-  padding-top: 160px;
-  padding-bottom: 100px;
+  .intro_content {
+    padding-top: 160px;
+    padding-bottom: 100px;
+  }
 }
 @media screen and (max-width: 568px) {
   .intro {

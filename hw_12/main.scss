@@ -124,8 +124,8 @@ p {
     min-height: 100vh;
 
     &_content {
-        padding-top: 260px;
-        padding-bottom: 400px;
+        padding-top: 20%;
+        padding-bottom: 25%;
     }
     &_title {
         margin-bottom: 20px;
@@ -140,15 +140,16 @@ p {
         min-height: 50vh;
         background-size: 50% auto;
         background-position: top right;
-    }
-    &_content {
-        padding-top: 160px;
-        padding-bottom: 100px;
+    
+        &_content {
+            padding-top: 160px;
+            padding-bottom: 100px;
+        }
     }
     @media screen and (max-width:568px) {
         background-size:  auto 40%;
         padding-top: 0;
-
+        
         &_content {
             padding-top: 160px;
             padding-bottom: 50px;  
