@@ -354,6 +354,7 @@ p {
   background-size: 100vh;
   background-position: top right;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 .intro_content {
   padding-top: 260px;
@@ -369,6 +370,7 @@ p {
 }
 @media screen and (max-width: 1024px) {
   .intro {
+    min-height: 50vh;
     background-size: 50% auto;
     background-position: top right;
   }
