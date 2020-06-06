@@ -86,6 +86,12 @@
 .general_img {
   width: 100%;
 }
+@media screen and (max-width: 1024px) {
+  .general {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
 @media screen and (max-width: 568px) {
   .general {
     padding-top: 50px;
@@ -147,6 +153,12 @@
   text-align: center;
   color: #5D6970;
 }
+@media screen and (max-width: 568px) {
+  .pricing {
+    padding-top: 150px;
+    padding-bottom: 60px;
+  }
+}
 
 .header {
   padding-top: 25px;
@@ -163,9 +175,31 @@
   font-style: normal;
   font-weight: normal;
   font-size: 0.875rem;
-  line-height: 1.5rem;
+  line-height: 1.2rem;
+  padding-bottom: 0;
+  padding-top: 0;
   color: #505F98;
-  margin-right: 60px;
+  margin-right: 50px;
+}
+.nav_link_animation {
+  display: inline-block;
+  overflow: hidden;
+}
+.nav_link_animation span {
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+  transition: transform 0.3s;
+}
+.nav_link_animation span::before {
+  position: absolute;
+  white-space: nowrap;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 500;
+}
+.nav_link_animation:hover span, .nav_link_animation:focus span {
+  transform: translateY(-100%);
 }
 @media screen and (max-width: 992px) {
   .nav_menu {
@@ -193,6 +227,21 @@
 }
 .feature_img {
   width: 100%;
+}
+.feature_title {
+  margin-bottom: 10px;
+}
+.feature_text {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .feature {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .feature_title {
+    margin-top: 30px;
+  }
 }
 
 html, body {
@@ -258,9 +307,22 @@ p {
 .btn-fill {
   background-color: #111B47;
   color: #fff;
+  transition: 0.3s;
+}
+.btn-fill:hover {
+  outline: none;
+  background-color: #ff6584;
+  color: #fff;
+  transform: translateY(-3px);
 }
 .btn_outline {
   border: 2px solid #091133;
+  transition: 0.3s;
+}
+.btn_outline:hover {
+  border-color: #ff6584;
+  color: #ff6584;
+  transform: translateY(-3px);
 }
 .btn-lg {
   padding: 5px 45px;
@@ -273,6 +335,18 @@ p {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
+}
+@media screen and (max-width: 568px) {
+  .btn-lg {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+  .btn-nav {
+    max-width: 160px;
+    padding: 5px 25px;
+    margin-bottom: 0;
+  }
 }
 
 .intro {
@@ -299,6 +373,10 @@ p {
     background-position: top right;
   }
 }
+.intro_content {
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
 @media screen and (max-width: 568px) {
   .intro {
     background-size: auto 40%;
@@ -307,5 +385,15 @@ p {
   .intro_content {
     padding-top: 160px;
     padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .intro {
+    background-image: none;
+    padding-top: 0;
+  }
+  .intro_content {
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
 }

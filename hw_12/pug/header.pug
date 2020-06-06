@@ -5,11 +5,14 @@ header.header
         .row.align-items-center
             .col-12.col-md-4.order-1.order-md-0.text-sm-center
                 .nav_menu
-                    a.nav-link(href="") Home
-                    a.nav-link(href="") About
-                    a.nav-link(href="") Contact
+                    a.nav-link.nav_link_animation(href="")
+                        span(data-hover="Home") Home
+                    a.nav-link.nav_link_animation(href="")
+                        span(data-hover="About") About
+                    a.nav-link.nav_link_animation(href="")
+                        span(data-hover="Contact") Contact
             .col-6.col-md-4.d-flex.justify-content-md-center.justify-content-sm-start
-                .nav-brand
+                a(href="").nav-brand
                     img(src="./img/Landie.svg", alt="logo")
             .col-6.col-md-4.d-flex.justify-content-end.align-items-center
-                button.btn.btn-fill.btn-lg Buy Now
+                button.btn.btn-fill.btn-lg.btn-nav Buy Now

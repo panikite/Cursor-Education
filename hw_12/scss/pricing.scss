@@ -56,4 +56,8 @@
 
         color: #5D6970;
     }
+    @media screen and (max-width: 568px) {
+        padding-top: 150px;
+        padding-bottom: 60px;
+    }
 }

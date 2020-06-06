@@ -58,6 +58,7 @@ p {
 }
 
 
+// Buttons
 
 .btn {
     display: inline-block;
@@ -66,9 +67,22 @@ p {
     &-fill {
         background-color: #111B47;
         color: #fff;
+        transition: .3s;
+    }
+    &-fill:hover {
+        outline: none;
+        background-color: #ff6584;
+        color: #fff;
+        transform: translateY(-3px);
     }
     &_outline {
         border: 2px solid #091133;
+        transition: .3s;
+    }
+    &_outline:hover {
+        border-color: #ff6584;
+        color: #ff6584;
+        transform: translateY(-3px);
     }
     &-lg {
         padding: 5px 45px;
@@ -81,6 +95,21 @@ p {
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
+    }
+    // &-nav {
+
+    // }
+    @media screen and (max-width: 568px) {
+        &-lg {
+            width: 100%;
+            margin-right: 0!important;
+            margin-bottom: 20px;
+        }
+        &-nav {
+            max-width: 160px;
+            padding: 5px 25px;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -107,8 +136,13 @@ p {
     }
 
     @media screen and (max-width:1024px) {
+        
         background-size: 50% auto;
         background-position: top right;
+    }
+    &_content {
+        padding-top: 160px;
+        padding-bottom: 100px;
     }
     @media screen and (max-width:568px) {
         background-size:  auto 40%;
@@ -117,6 +151,15 @@ p {
         &_content {
             padding-top: 160px;
             padding-bottom: 50px;  
+        }
+    }
+    @media screen and (max-width:450px) {
+        background-image:none;
+        padding-top: 0;
+
+        &_content {
+            padding-top: 60px;
+            padding-bottom: 30px;  
         }
     }
 }

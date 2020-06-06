@@ -4,4 +4,17 @@
     &_img {
         width: 100%;
     }
+    &_title {
+        margin-bottom: 10px;
+    }
+    &_text {
+        margin-bottom: 30px;
+    }
+    @media screen and (max-width:1024px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &_title {
+            margin-top: 30px;
+        }
+    }
 }
