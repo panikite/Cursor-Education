@@ -1,0 +1,50 @@
+//- <!DOCTYPE html>
+//- - var img1 = '../img/feature_1.png'
+//- - var img2 = '../img/feature_2.png'
+//- - var img3 = '../img/feature_3.png'
+
+//- -var images = ['../img/feature_1.png', '../img/feature_2.png','../img/feature_3.png' ]
+
+//- mixin test(path,descript)
+//-     section
+//-         .section-container
+//-             .image
+//-                 img(src= path alt= descript)
+//-                 .section-text
+//-                 h3 Hello Cat
+//-                 p  Meow-meow
+
+//- +test(img1, 'cat1')
+//- +test(img2, 'cat2')
+//- +test(images[0], 'cat1')
+//- +test(images[2], 'cat1')
+
+
+
+<!DOCTYPE html>
+
+-var images = ['../img/feature_1.png', '../img/feature_2.png','../img/feature_3.png' ]
+
+mixin test(path,descript)
+    section
+        .section-container
+            .image
+                img(src= path alt= descript)
+                .section-text
+                h3 Hello Cat
+                p  Meow-meow
+                if path == "../img/feature_3.png" 
+                    button Click me
+                
+                
++test(images[0], 'cat1')
++test(images[2], 'cat1')
++test(images[1], 'cat1')
+
+
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
