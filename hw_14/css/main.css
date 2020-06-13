@@ -73,11 +73,8 @@ header .phone {
 }
 
 .price {
-    background-image: url("../img/price-bg.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 120px;
-    height: 120px;
+    width: 155px; height: 156px;
+    background: url('../img/css_sprites.webp') -10px -737px;
     font-size: 18px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -468,12 +465,12 @@ button {
     display: block;
     text-align: right;
     margin: 10px 0 auto 0;
-    vertical-align: top;
+    vertical-align: middle;
     padding-top: 15px;
 }
 
 .reviews .review-author > * {
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .reviews .review-author .ava {
@@ -592,4 +589,67 @@ footer {
     margin-top: 100px;
     background-color: #333;
     height: 50px;
+}
+
+.bg-reason1 {
+    margin: 0 auto; 
+    width: 55px; height: 34px;
+    background: url('../img/css_sprites.webp') -10px -10px;
+}
+.bg-reason2 {
+    margin: 0 auto;  
+    width: 45px; height: 45px;
+    background: url('../img/css_sprites.webp') -10px -64px;
+}
+.bg-reason3 {
+    margin: 0 auto;  
+    width: 39px; height: 57px;
+    background: url('../img/css_sprites.webp') -10px -336px;
+}
+.bg-reason4 {
+    margin: 0 auto;  
+    width: 48px; height: 48px;
+    background: url('../img/css_sprites.webp') -10px -194px;
+}
+.bg-adv1 {
+    margin: 0 auto;    
+    width: 55px; height: 60px;
+    background: url('../img/css_sprites.webp') -10px -413px;
+}
+.bg-adv2 {
+    margin: 0 auto; 
+    width: 55px; height: 60px;
+    background: url('../img/css_sprites.webp') -10px -493px;
+}
+.bg-adv3 {
+    margin: 0 auto; 
+    width: 60px; height: 54px;
+    background: url('../img/css_sprites.webp') -10px -262px;
+}
+.bg-review1_ava {
+    display: inline-block;
+    width: 45px; height: 45px;
+    background: url('../img/css_sprites.webp') -10px -129px;
+}
+.bg-arrow_left {
+    display: inline-block;
+    width: 23px; height: 62px;
+    background: url('../img/css_sprites.webp') -10px -573px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.bg-arrow_right {
+    display: inline-block;
+    width: 23px; height: 62px;
+    background: url('../img/css_sprites.webp') -10px -655px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    -webkit-transform: translate(100%, -50%);
+    -ms-transform: translate(100%, -50%);
+    transform: translate(100%, -50%);
 }
