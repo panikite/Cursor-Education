@@ -441,7 +441,15 @@ button {
     margin-bottom: 50px;
 }
 
-.video #video {
+/* .video #video {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    border: 10px solid #ffdc00;
+} */
+.video #mobile_video {
     display: block;
     max-width: 800px;
     width: 100%;
@@ -449,16 +457,7 @@ button {
     height: 400px;
     border: 10px solid #ffdc00;
 }
-.video #mobile_video {
-    display: none;
-    max-width: 560px;
-    width: 100%;
-    margin: 0 auto;
-    /* height: 400px; */
-    border: 5px solid #ffdc00;
-    /* background-color: red; */
-}
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .video #video {
         display: none;
         background-color: green;
@@ -467,7 +466,7 @@ button {
         display: block;
         /* background-color: orange */
     }
-}
+} */
 
 .how {
     text-align: center;
