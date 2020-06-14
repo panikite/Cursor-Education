@@ -47,5 +47,6 @@ font-style: normal;
   font-family: 'HelveticaNeueLightItalic';
   src: local("☺"), url("../fonts/HelveticaNeueCyr-LightItalic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-LightItalic.ttf") format("truetype");
   font-weight: normal;
+  font-display: swap;
   font-style: normal; }
 
