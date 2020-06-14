@@ -167,11 +167,27 @@ button {
 .main-screen {
     min-height: 1px;
     height: 700px;
-    background-image: url("../img/main-screen-bg.jpg");
+    background-image: url("../img/main-screen-bg_1920.webp");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+    .main-screen {
+        background-image: url("../img/main-screen-bg_1297.webp");
+    }
+}
+@media screen and (max-width: 998px) {
+    .main-screen {
+        background-image: url("../img/main-screen-bg_959.webp");
+    }
+}
+@media screen and (max-width: 568px) {
+    .main-screen {
+        background-image: url("../img/main-screen-bg_500.webp");
+    }
 }
 
 .main-screen img {
