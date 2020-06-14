@@ -13,7 +13,9 @@ body {
     font-size: 14px;
     letter-spacing: 0.05em;
 }
-
+#body {
+    display:none;
+}
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
