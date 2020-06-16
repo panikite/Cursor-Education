@@ -1,0 +1,79 @@
+@import '../variables';
+
+
+
+.uikit__button {
+    display: grid;
+    width: 500px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px 15px;
+    // background-color: red;
+}
+
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    font-family: 'Helvetica';
+    text-align: center;
+    width: 144px;
+    height: 46px;
+    border-radius: $border-radius;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+
+    &--default {
+        background: $default-color;
+        color: #fff;
+    }
+    &--default > svg > path {
+        stroke: #fff;
+    } 
+    &--disabled {
+        background: $disabled-color;
+        color: $disabled-text-color;
+    }
+    &--disabled > svg > path {
+        stroke: $disabled-text-color;
+    } 
+    &--outline {
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        color: $outline-color;
+    }
+    &--outline > svg > path {
+        stroke: $outline-color;
+    } 
+    &--outline-blue {
+        background: #FFFFFF;
+        border: 1px solid $default-color;
+        color: $default-color;
+    }
+    &--outline-blue > svg > path {
+        stroke: $default-color;
+    } 
+    &--icon-rt {
+        justify-content: flex-start;
+        padding-left: 24px;
+    }
+    &--icon-rt > svg {
+        margin-left: 10px;
+        width: 24px;
+    }
+    &--icon-lt {
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 24px;
+    }
+    &--icon-lt > svg {
+        margin-right: 10px;
+    }
+}
+

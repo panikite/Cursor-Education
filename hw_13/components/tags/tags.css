@@ -1,0 +1,10 @@
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  font-family: "Helvetica";
+  text-align: center;
+  border-radius: 5px;
+}

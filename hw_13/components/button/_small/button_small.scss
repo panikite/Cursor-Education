@@ -1,0 +1,93 @@
+@import '../../variables';
+@mixin small {
+    font-size: 13px;
+    line-height: 16px;
+    height: 36px;
+    width: 111px;
+}
+
+.uikit__button-small {
+    display: grid;
+    width: 500px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px 45px;
+    // background-color: red;
+}
+
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    font-family: 'Helvetica';
+    text-align: center;
+    width: 144px;
+    height: 46px;
+    border-radius: $border-radius;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    &--small {
+        @include small;
+        font-size: 13px;
+        line-height: 16px;
+        height: 36px;
+        width: 111px;
+
+        &.button--icon-rt {
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &.button--icon-lt {
+            padding-left: 10px;
+            padding-right: 10px;
+            & svg {
+                margin-right: 10px;
+            }
+        }
+    }
+    &--default {
+        background: $default-color;
+        color: #fff;
+    }
+    &--default > svg > path {
+        stroke: #fff;
+    } 
+    &--disabled {
+        background: $disabled-color;
+        color: $disabled-text-color;
+    }
+    &--disabled > svg > path {
+        stroke: $disabled-text-color;
+    } 
+    &--outline {
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        color: $outline-color;
+    }
+    &--outline > svg > path {
+        stroke: $outline-color;
+    } 
+    &--outline-blue {
+        background: #FFFFFF;
+        border: 1px solid $default-color;
+        color: $default-color;
+    }
+    &--outline-blue > svg > path {
+        stroke: $default-color;
+    } 
+    &--error {
+        background-color: #FF3E1D;
+        color: #fff;
+        svg > path {
+            stroke: #fff;
+        }
+    }
+}
+

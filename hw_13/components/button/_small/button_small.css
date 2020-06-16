@@ -1,0 +1,90 @@
+.uikit__button {
+  display: grid;
+  width: 500px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  font-family: "Helvetica";
+  text-align: center;
+  width: 144px;
+  height: 46px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+}
+.button--small {
+  font-size: 13px;
+  line-height: 16px;
+  height: 36px;
+  width: 111px;
+  font-size: 13px;
+  line-height: 16px;
+  height: 36px;
+  width: 111px;
+  background-color: red;
+}
+.button--default {
+  background: #18A0FB;
+  color: #fff;
+}
+.button--default > svg > path {
+  stroke: #fff;
+}
+.button--disabled {
+  background: rgba(224, 224, 224, 0.3);
+  color: #878787;
+}
+.button--disabled > svg > path {
+  stroke: #878787;
+}
+.button--outline {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  color: #2C2C2C;
+}
+.button--outline > svg > path {
+  stroke: #2C2C2C;
+}
+.button--outline-blue {
+  background: #FFFFFF;
+  border: 1px solid #18A0FB;
+  color: #18A0FB;
+}
+.button--outline-blue > svg > path {
+  stroke: #18A0FB;
+}
+.button--icon-rt {
+  justify-content: flex-start;
+  padding-left: 24px;
+}
+.button--icon-rt > svg {
+  margin-left: 10px;
+}
+.button--icon-lt {
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 24px;
+}
+.button--icon-lt > svg {
+  margin-right: 16px;
+}
+.button--small {
+  font-size: 13px;
+  line-height: 16px;
+  height: 36px;
+  width: 111px;
+  font-size: 13px;
+  line-height: 16px;
+  height: 36px;
+  width: 111px;
+  background-color: red;
+}

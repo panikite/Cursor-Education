@@ -1,0 +1,321 @@
+.uikit__button {
+  display: grid;
+  width: 500px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px 15px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  font-family: "Helvetica";
+  text-align: center;
+  width: 144px;
+  height: 46px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+}
+.button--default {
+  background: #18A0FB;
+  color: #fff;
+}
+.button--default > svg > path {
+  stroke: #fff;
+}
+.button--disabled {
+  background: rgba(224, 224, 224, 0.3);
+  color: #878787;
+}
+.button--disabled > svg > path {
+  stroke: #878787;
+}
+.button--outline {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  color: #2C2C2C;
+}
+.button--outline > svg > path {
+  stroke: #2C2C2C;
+}
+.button--outline-blue {
+  background: #FFFFFF;
+  border: 1px solid #18A0FB;
+  color: #18A0FB;
+}
+.button--outline-blue > svg > path {
+  stroke: #18A0FB;
+}
+.button--icon-rt {
+  justify-content: flex-start;
+  padding-left: 24px;
+}
+.button--icon-rt > svg {
+  margin-left: 10px;
+  width: 24px;
+}
+.button--icon-lt {
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 24px;
+}
+.button--icon-lt > svg {
+  margin-right: 10px;
+}
+
+.uikit__button-small {
+  display: grid;
+  width: 500px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px 45px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  font-family: "Helvetica";
+  text-align: center;
+  width: 144px;
+  height: 46px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+}
+.button--small {
+  font-size: 13px;
+  line-height: 16px;
+  height: 36px;
+  width: 111px;
+  font-size: 13px;
+  line-height: 16px;
+  height: 36px;
+  width: 111px;
+}
+.button--small.button--icon-rt {
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.button--small.button--icon-lt {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.button--small.button--icon-lt svg {
+  margin-right: 10px;
+}
+.button--default {
+  background: #18A0FB;
+  color: #fff;
+}
+.button--default > svg > path {
+  stroke: #fff;
+}
+.button--disabled {
+  background: rgba(224, 224, 224, 0.3);
+  color: #878787;
+}
+.button--disabled > svg > path {
+  stroke: #878787;
+}
+.button--outline {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  color: #2C2C2C;
+}
+.button--outline > svg > path {
+  stroke: #2C2C2C;
+}
+.button--outline-blue {
+  background: #FFFFFF;
+  border: 1px solid #18A0FB;
+  color: #18A0FB;
+}
+.button--outline-blue > svg > path {
+  stroke: #18A0FB;
+}
+.button--error {
+  background-color: #FF3E1D;
+  color: #fff;
+}
+.button--error svg > path {
+  stroke: #fff;
+}
+
+.uikit__tag {
+  display: grid;
+  width: 100px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px 15px;
+  margin-top: 35px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  font-family: "Helvetica";
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  font-family: "Helvetica";
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 65px;
+}
+.tag--icon-rt {
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tag--small {
+  width: 50px;
+}
+.tag--default {
+  background-color: #18A0FB;
+  color: #fff;
+}
+.tag--default > svg > path {
+  stroke: #fff;
+}
+.tag--outline {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  color: #2C2C2C;
+}
+
+.tab_kit {
+  display: grid;
+  width: 500px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.tabs {
+  display: flex;
+}
+.tabs .tab:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.tabs .tab:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  font-family: "Helvetica";
+  text-align: center;
+  height: 46px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+}
+.tab--active {
+  background-color: #18A0FB;
+  border-color: transparent;
+  color: #fff;
+}
+.tab--active svg > path {
+  fill: #fff;
+}
+.tab_icon {
+  width: 56px;
+}
+.tab_text {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.tab--small {
+  height: 36px;
+}
+.tab--small.tab_text {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.icon {
+  outline: none;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+.icon svg > path {
+  fill: #fff;
+}
+.icon--small {
+  width: 36px;
+  height: 36px;
+}
+.icon--red {
+  background-color: #FF3E1D;
+}
+.icon--green {
+  background-color: #00D200;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.container_column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.container_column--buttons {
+  flex-basis: 600px;
+}
+.container_column--tabs {
+  flex-basis: 400px;
+  margin-top: 70px;
+}
+.container_column--small-tabs {
+  margin-top: 60px;
+}
+
+.uikit__title {
+  margin-bottom: 30px;
+}
+
+.block {
+  margin-top: 35px;
+}

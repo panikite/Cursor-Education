@@ -1,0 +1,27 @@
+
+$default-color: #18A0FB;
+$disabled-color:rgba(224, 224, 224, 0.3);
+$disabled-text-color: #878787;
+$outline-color:#2C2C2C;
+$border-radius: 5px;
+
+
+
+@mixin default {
+    background: $default-color;
+    color: #fff;
+}
+@mixin button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    font-family: 'Helvetica';
+    text-align: center;
+    border-radius: $border-radius;
+
+}
+@mixin smallBlock {
+    margin-top: 35px;
+}

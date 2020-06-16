@@ -1,0 +1,45 @@
+@import '../variables';
+
+
+.uikit__tag{
+    display: grid;
+    width: 100px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px 15px;
+    @include smallBlock;
+    // background-color: red;
+}
+.tag {
+    @include button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    font-family: 'Helvetica';
+    text-align: center;
+    border-radius: $border-radius;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 65px;
+    &--icon-rt {
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    &--small {
+        width: 50px;
+    }
+    &--default {
+        background-color: $default-color;
+        color: #fff;
+    }
+    &--default > svg > path {
+        stroke: #fff;
+    }
+    &--outline {
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        color: $outline-color;
+    }
+}

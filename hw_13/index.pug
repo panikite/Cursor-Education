@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="./main.css")
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    body
+        .container_column.container_column--buttons
+            include components/button/button.pug
+            include components/button/_small/button_small.pug
+            include components/tags/tags.pug
+        .container_column.container_column--tabs
+            include components/tabs/tabs.pug
+            .container_column--small-tabs
+                include components/tabs/_small/tabs_small.pug
+                include components/icon/icon.pug

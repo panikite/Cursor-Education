@@ -1,0 +1,56 @@
+@import '../variables';
+
+.tab_kit {
+    display: grid;
+    width: 500px;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 10px;
+    // background-color: red;
+}
+
+.tabs {
+    display: flex;
+    & .tab:first-child {
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+    }
+    // & .tab:nth-child(2n) {
+    //     border-right-color: transparent;
+    // }
+    & .tab:last-child {
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+    }
+    
+}
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    font-family: 'Helvetica';
+    text-align: center;
+    height: 46px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    &--active {
+        background-color: $default-color;
+        border-color: transparent;
+        color: #fff;
+        svg > path {
+            fill: #fff;
+        }
+    }
+    &_icon {
+        width: 56px;
+    }
+    &_text {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}

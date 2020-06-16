@@ -1,0 +1,41 @@
+@import './components/button/button';
+@import './components/button/_small/button_small';
+@import './components/tags/tags';
+@import './components/tabs/tabs';
+@import './components/tabs/_small/tabs_small';
+@import './components/icon/icon';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+}
+.container_column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 40px;
+    &--buttons {
+        flex-basis: 600px;
+    }
+    &--tabs {
+        flex-basis: 400px;
+        margin-top: 70px;
+    }
+    &--small-tabs {
+        margin-top: 60px;
+    }
+}
+.uikit__title {
+    margin-bottom: 30px;
+}
+.block {
+    @include smallBlock; 
+}
