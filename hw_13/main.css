@@ -21,16 +21,31 @@
   line-height: 18px;
   text-decoration: none;
 }
+.button:hover {
+  cursor: pointer;
+}
 .button--default {
   background: #18A0FB;
   color: #fff;
 }
-.button--default > svg > path {
+.button--default:hover {
+  background: #0f8fe4;
+}
+.button--default:active {
+  background: #0d7bc5;
+}
+.button--default svg > path {
   stroke: #fff;
 }
 .button--disabled {
-  background: rgba(224, 224, 224, 0.3);
+  background: rgba(224, 224, 224, 0.678);
   color: #878787;
+}
+.button--disabled:hover {
+  background: rgba(153, 153, 153, 0.4);
+}
+.button--disabled:active {
+  background: rgba(141, 141, 141, 0.5);
 }
 .button--disabled > svg > path {
   stroke: #878787;
@@ -40,6 +55,20 @@
   border: 1px solid #E0E0E0;
   color: #2C2C2C;
 }
+.button--outline:hover {
+  border-color: #18A0FB;
+  color: #18A0FB;
+}
+.button--outline:hover svg > path {
+  stroke: #18A0FB;
+}
+.button--outline:active {
+  border-color: #0f8fe4;
+  color: #0f8fe4;
+}
+.button--outline:active svg > path {
+  stroke: #0f8fe4;
+}
 .button--outline > svg > path {
   stroke: #2C2C2C;
 }
@@ -47,6 +76,22 @@
   background: #FFFFFF;
   border: 1px solid #18A0FB;
   color: #18A0FB;
+}
+.button--outline-blue:hover {
+  border-color: #0f8fe4;
+  background: #18A0FB;
+  color: #fff;
+}
+.button--outline-blue:hover svg > path {
+  stroke: #fff;
+}
+.button--outline-blue:active {
+  border-color: #0d7bc5;
+  background: #0f8fe4;
+  color: #fff;
+}
+.button--outline-blue:active svg > path {
+  stroke: #fff;
 }
 .button--outline-blue > svg > path {
   stroke: #18A0FB;
@@ -121,7 +166,7 @@
   stroke: #fff;
 }
 .button--disabled {
-  background: rgba(224, 224, 224, 0.3);
+  background: rgba(224, 224, 224, 0.678);
   color: #878787;
 }
 .button--disabled > svg > path {
@@ -143,12 +188,18 @@
 .button--outline-blue > svg > path {
   stroke: #18A0FB;
 }
-.button--error {
+.button--red {
   background-color: #FF3E1D;
   color: #fff;
 }
-.button--error svg > path {
+.button--red svg > path {
   stroke: #fff;
+}
+.button--red:hover {
+  background: #d12d10;
+}
+.button--red:active {
+  background: #bb280e;
 }
 
 .uikit__tag {
@@ -180,6 +231,9 @@
   padding-bottom: 5px;
   width: 65px;
 }
+.tag:hover {
+  cursor: pointer;
+}
 .tag--icon-rt {
   justify-content: space-between;
   padding-left: 10px;
@@ -192,6 +246,12 @@
   background-color: #18A0FB;
   color: #fff;
 }
+.tag--default:hover {
+  background: #0f8fe4;
+}
+.tag--default:active {
+  background: #0d7bc5;
+}
 .tag--default > svg > path {
   stroke: #fff;
 }
@@ -199,6 +259,20 @@
   background: #FFFFFF;
   border: 1px solid #E0E0E0;
   color: #2C2C2C;
+}
+.tag--outline:hover {
+  border-color: #18A0FB;
+  color: #18A0FB;
+}
+.tag--outline:hover svg > path {
+  stroke: #18A0FB;
+}
+.tag--outline:active {
+  border-color: #0f8fe4;
+  color: #0f8fe4;
+}
+.tag--outline:active svg > path {
+  stroke: #0f8fe4;
 }
 
 .tab_kit {
@@ -236,10 +310,24 @@
   background: #FFFFFF;
   border: 1px solid #E0E0E0;
 }
+.tab:hover {
+  cursor: pointer;
+  background-color: rgba(224, 224, 224, 0.678);
+  border-color: transparent;
+}
+.tab:active {
+  background: rgba(141, 141, 141, 0.5);
+}
 .tab--active {
   background-color: #18A0FB;
   border-color: transparent;
   color: #fff;
+}
+.tab--active:hover {
+  background: #0f8fe4;
+}
+.tab--active:active {
+  background: #0d7bc5;
 }
 .tab--active svg > path {
   fill: #fff;
@@ -267,6 +355,9 @@
   height: 48px;
   border-radius: 100%;
 }
+.icon:hover {
+  cursor: pointer;
+}
 .icon svg > path {
   fill: #fff;
 }
@@ -277,8 +368,20 @@
 .icon--red {
   background-color: #FF3E1D;
 }
+.icon--red:hover {
+  background: #d12d10;
+}
+.icon--red:active {
+  background: #bb280e;
+}
 .icon--green {
   background-color: #00D200;
+}
+.icon--green:hover {
+  background: #02ad02;
+}
+.icon--green:active {
+  background: #069606;
 }
 
 * {

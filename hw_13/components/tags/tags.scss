@@ -22,6 +22,12 @@
     padding-top: 5px;
     padding-bottom: 5px;
     width: 65px;
+    
+    &:hover {
+        cursor: pointer;
+    }
+
+
     &--icon-rt {
         justify-content: space-between;
         padding-left: 10px;
@@ -33,6 +39,12 @@
     &--default {
         background-color: $default-color;
         color: #fff;
+        &:hover {
+            background: $default-color--hover
+        }
+        &:active {
+            background: $default-color--active
+        }
     }
     &--default > svg > path {
         stroke: #fff;
@@ -41,5 +53,19 @@
         background: #FFFFFF;
         border: 1px solid #E0E0E0;
         color: $outline-color;
+        &:hover {
+            border-color: $default-color;
+            color: $default-color;
+            & svg > path {
+                stroke: $default-color;
+            }
+        }
+        &:active {
+            border-color: $default-color--hover;
+            color: $default-color--hover;
+            & svg > path {
+                stroke: $default-color--hover;
+            }
+        }
     }
 }

@@ -1,8 +1,23 @@
 
 $default-color: #18A0FB;
-$disabled-color:rgba(224, 224, 224, 0.3);
+$default-color--hover: #0f8fe4;
+$default-color--active: #0d7bc5;
+
+$disabled-color:rgba(224, 224, 224, 0.678);
+$disabled-color--hover:rgb(153, 153, 153, 0.4);
+$disabled-color--active:rgb(141, 141, 141, 0.5);
 $disabled-text-color: #878787;
+
 $outline-color:#2C2C2C;
+
+$red-color: #FF3E1D;
+$red-color--hover: #d12d10;
+$red-color--active: #bb280e;
+
+$green-color: #00D200;
+$green-color--hover: #02ad02;
+$green-color--active: #069606;
+
 $border-radius: 5px;
 
 

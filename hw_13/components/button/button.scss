@@ -7,7 +7,6 @@
     width: 500px;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 10px 15px;
-    // background-color: red;
 }
 
 
@@ -28,17 +27,33 @@
     font-size: 15px;
     line-height: 18px;
     text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
 
     &--default {
         background: $default-color;
         color: #fff;
+        &:hover {
+            background: $default-color--hover
+        }
+        &:active {
+            background: $default-color--active
+        }
+        svg > path {
+            stroke: #fff;
+        } 
     }
-    &--default > svg > path {
-        stroke: #fff;
-    } 
+    
     &--disabled {
         background: $disabled-color;
         color: $disabled-text-color;
+        &:hover {
+            background: $disabled-color--hover
+        }
+        &:active {
+            background: $disabled-color--active
+        }
     }
     &--disabled > svg > path {
         stroke: $disabled-text-color;
@@ -47,6 +62,20 @@
         background: #FFFFFF;
         border: 1px solid #E0E0E0;
         color: $outline-color;
+        &:hover {
+            border-color: $default-color;
+            color: $default-color;
+            & svg > path {
+                stroke: $default-color;
+            }
+        }
+        &:active {
+            border-color: $default-color--hover;
+            color: $default-color--hover;
+            & svg > path {
+                stroke: $default-color--hover;
+            }
+        }
     }
     &--outline > svg > path {
         stroke: $outline-color;
@@ -55,6 +84,22 @@
         background: #FFFFFF;
         border: 1px solid $default-color;
         color: $default-color;
+        &:hover {
+            border-color: $default-color--hover;
+            background: $default-color;
+            color: #fff;
+            & svg > path {
+                stroke: #fff;
+            }
+        }
+        &:active {
+            border-color: $default-color--active;
+            background: $default-color--hover;
+            color: #fff;
+            & svg > path {
+                stroke: #fff;
+            }
+        }
     }
     &--outline-blue > svg > path {
         stroke: $default-color;
